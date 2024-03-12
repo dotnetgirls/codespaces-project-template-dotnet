@@ -249,48 +249,6 @@ On your GitHub repository:
 
 <br />
 
-## 🏆 Challenges
-
-Below are 4 additional ways you can continue to customize your portfolio site and learn some Codespaces, CSS, HTML and JavaScript along the way.
-
-  1. [Customize your Codespaces](#1-customize-your-codespaces)
-  1. [Update to smooth scroll to a section](#2-update-to-smooth-scroll-to-a-section)
-  1. [Animate the desk photo](#3-animate-desk-photo)
-  1. [Add a new section](#4-add-a-new-section)
-
-### 1. Customize your Codespaces
-
-Your environment comes with preinstalled extensions. You can change which extensions your Codespaces environment starts with, here's how:
-
-1. Open file _.devcontainer/devcontainer.json_ and locate the following JSON element **extensions**
-
-    ```jsonc
-    "extensions": [
-      "GitHub.copilot",
-      "GitHub.copilot-chat",
-      "ms-dotnettools.csdevkit",
-      "ms-vscode.PowerShell",
-      "ms-vscode.vscode-node-azure-pack",
-      "VisualStudioExptTeam.vscodeintellicode"
-    ]
-    ```
-
-1. Let's add the `indent-rainbow` extension. To do this, go to the **extensions** list and add:
-
-    ```jsonc
-    "oderwat.indent-rainbow"
-    ```
-  
-   What you did above was to add the unique identifier of an extension of the [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo). This will let Codespaces know that this extension should be pre-installed upon startup.
-
-To find the unique identifier of an extension:
-
-* Navigate to the extension's web page, like so [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
-* Locate the _Unique Identifier_ field under **More info** section on your right side.
-
-
-<br />
-
 
 ## 🏆 도전과제
 
@@ -333,9 +291,6 @@ To find the unique identifier of an extension:
 
 > 💡 이곳에서 더 배울 수 있습니다. <https://docs.github.com/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account>
 
-<br /><br />
-
-
 
 
 ### 2. 부드럽게 섹션으로 이동하기
@@ -354,40 +309,6 @@ To find the unique identifier of an extension:
 
 이미 코드스페이스에서 사이트가 실행 중이며 변경 사항이 페이지에 자동으로 다시로드될 것입니다. 상단 헤더의 링크를 클릭하여 부드러운 스크롤이 작동하는 것을 확인해보세요.
 
-<br /><br />
-
-### 3. Animate desk photo
-
-Animations are a way you can easily add some motion to elements on your page to increase user interactivity and highlight items you want to make sure they notice. Let's animate the desk photo in the portfolio section.
-
-1. Open your site's stylesheet, `/src/BlazorApp/wwwroot/css/app.css` within your Codespaces. Add the animation sequence by adding a `@keyframes` definition to slide in from the left:
-
-    ```css
-    @keyframes slideInLeft {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-    ```
-
-1. Now that we have defined our `slideInLeft` animation sequence we can tell our desk photo to animate itself with that sequence. Open `/src/BlazorApp/Components/Portfolio.razor` and locate the `img` tag. You will see it utilizes inline CSS to set it's styling. Within it's style definition add the following:
-
-    ```css
-    animation: 1s ease-out 0s 1 slideInLeft;
-    ```
-
-    Your image tag should look something like:
-
-    ```html
-    <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover; animation: 1s ease-out 0s 1 slideInLeft;" alt="@(hero.Alt)" />
-    ```
-
-Your site should already be running in your Codespaces, and the change will reload onto the page automatically. Scroll up and down the page and watch your desk photo slide onto the page.
-
-> 🤩 **Bonus**: Animate scroll down arrow
 
 
 ### 3. Desk Photo에 애니메이션 추가
@@ -424,31 +345,6 @@ Your site should already be running in your Codespaces, and the change will relo
 > 🤩 **추가 사항**: 스크롤 다운 화살표도 애니메이션화하세요.
 
 
-<br /><br />
-
-### 4. Add a new section
-
-We started you off with a few basic sections for your portfolio site, but you have creative freedom to make it your own and add new sections relevant to what you want on your site.
-
-For an example, let's add an education section to your portfolio site. 
-
-1. Create a new component for the section within the `Components` folder. Add a new file called `Education.razor`.
-
-1. In `Education.razor` add the component function, export and information you'd like to include:
-
-    ```razor
-    <section class="light" id="portfolio">
-        <h2>Education</h2>
-    </section>
-    ```
-
-1. In `Index.razor` add the `Education` component where you would like it to render within the page by inserting:
-
-    ```razor
-    <Education />
-    ```
-
-In your Codespaces, your portfolio application should be running and will reload your site with the changes.
 
 ### 4. 새로운 섹션 추가하기
 
@@ -474,27 +370,8 @@ In your Codespaces, your portfolio application should be running and will reload
 
 여러분의 Codespaces에서 포트폴리오 애플리케이션이 실행 중이어야 하며 변경 사항이 사이트에 자동으로 다시로드될 것입니다.
 
-<br /><br />
-
-## 📚 Resources
-
-* [GitHub Codespaces docs overview](https://docs.github.com/codespaces/overview)
-* [GitHub Codespaces guides](https://docs.github.com/codespaces/guides)
-* [Use dev containers locally with VS Code and Docker](https://github.com/microsoft/vscode-remote-try-dotnet#vs-code-dev-containers)
-* [Get started with Blazor](https://learn.microsoft.com/training/paths/build-web-apps-with-blazor/?WT.mc_id=dotnet-82024-juyoo)
-* [Web Development for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners)
-
-> #### Codespaces Browser App
->
-> If you are using Edge or Chrome you will see an option to install the Codespaces app when you launch your Codespaces. The Codespaces app lets you launch your Codespaces within the app so you can work outside of the browser.  Look for the app icon and install pop-up to try it out.
->
-> <img src="./images/codespaces-app.png" alt="Codespaces browser app" style="width: 400px;"/>
-
 <br />
 
-## 🔎 Found an issue or have an idea for improvement?
-
-Help us make this template repository better by [letting us know and opening an issue!](/../../issues/new).
 
 ## 📚 Resources
 
