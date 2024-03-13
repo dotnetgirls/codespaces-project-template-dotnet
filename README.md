@@ -1,37 +1,39 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=education/codespaces-project-template-dotnet) 
 
-# .NET (Blazor) Portfolio Site with GitHub Codespaces
+# GitHub Codespaces를 사용해 닷넷 (블레이저) 포트폴리오 사이트 만들기 
 
-_Create, customize and deploy your own portfolio website in minutes._ ✨
+_몇 분만에 자기만의 포트폴리오 사이트를 생성, 커스텀, 그리고 배포까지 할 수 있습니다_ ✨
 
-In this template repository we have the development environment and base set and ready to go. So that you can immediately launch the Codespaces to customize with no setup.
+이 템플릿 레포지토리에는 개발 환경과 기본 양식 있어 바로 시작할 수 있습니다. Codespaces를 즉시 실행해서 환경 셋팅 과정없이 포트폴리오 사이트 양식을 커스텀하실 수 있습니다.
 
-- **Who is this for?** __Anyone__ looking to create a portfolio site, learn web development, or test out Codespaces.
-- **How much experience do you need?** __Zero__. You decide how much you want to customize based on your experience, and time available.
-- **Tools needed:** _None_. No need to install anything! All you need is a web browser.
-- **Prerequisites:** _None_. This template includes your development environment and deployable web app for you to create your own site.
 
-## About this portfolio template
+- **누구를 대상으로 하나요?** __모두__ 포트폴리오 사이트를 만들고자 하거나, 웹 개발을 배우고 싶거나, 코드스페이스를 사용해보고 싶은 모든 사람들을 대상입니다.
+- **관련 경험이 있어야 하나요?** __필요 없음__. 경험과 가능한 시간에 따라 포트폴리오 사이트 양식 커스텀을 어느 정도하실지 결정하실 수 있습니다.
+- **필요한 준비물** __없음__. 설치해야 하는 것이 없습니다! 웹 브라우저(Edge, Chrome..)만 있으면 됩니다.
+- **전제 조건:** __없음__. 이 템플릿에는 자신만의 포트폴리오 사이트를 만들 수 있는 개발 환경과 배포 가능한 웹 앱이 포함되어 있습니다.
+
+## 포트폴리오 사이트 양식에 대해서
 
 In this "choose your own adventure" template portfolio, we have a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?WT.mc_id=dotnet-82024-juyoo) based web application ready for you to easily customize and deploy using only your web browser.  
+이 "choose your own adventure" 템플릿 포트폴리오에는 웹 브라우저만 사용하여 쉽게 사용자 정의하고 배포할 수 있는, [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?WT.mc_id=dotnet-82024-juyoo) 웹 어플리케이션이 있습니다.
 
 ![Blazor WebAssembly profile web application](./images/blazorwasm-portfolio-site.gif "Blazor WebAssembly profile web application")
 
-### Quick Start
+### 빠르게 시작하기
 
-1. Click the **Use this Template** button
+1.  **Use this Template** 버튼을 클릭합니다.
 
    [![Use this Template](/images/template-button.svg)](https://github.com/education/codespaces-project-template-dotnet/generate)
 
-1. Select the repository owner (e.g. your GitHub account)
-1. Enter a unique name for your new repository
-1. Click the **Code** button
-1. Click **Create Codespace on main** button
-1. [Customize your portfolio site](#-customize-your-site-in-4-steps)
-1. [Deploy your site](#-deploy-your-web-application)
+1. 레포지토리 소유자를 선택합니다. (예시: 자신의 GitHub 계정)
+1. 새 저장소의 고유한 이름을 입력합니다.
+1. **Code** 버튼을 클릭합니다.
+1. **Create Codespace on main** 버튼을 클릭합니다.
+1. [포트폴리오 사이트 커스텀하기](#-customize-your-site-in-4-steps)
+1. [사이트 배포하기](#-deploy-your-web-application)
 
 <details>
-   <summary><b>🎥 To learn more about Codespaces, watch our video tutorial series</b></summary>
+   <summary><b>🎥 Codespaces에 대해 자세히 알아보기 위해 튜토리얼 영상 시리즈를 시청하실 수 있습니다다.</b></summary>
 
    [![Codespaces Tutorial](https://img.youtube.com/vi/ozuDPmcC1io/0.jpg)](https://aka.ms/CodespacesVideoTutorial "Codespaces Tutorial")
 </details>
@@ -85,7 +87,7 @@ Your development environment is all set for you to start. Based on our [.NET Cod
    <img src="./images/app-running-in-codespaces.png" alt="Web application started on port 4280" style="width: 340px;"/>
 
 <br />
-
+여기까
 ## ✨ Customize your site in 4 steps
 
 This project is built to be easily customizable. Each section of the site is a separate component, and your information needs to be set in only one spot. This is not only for ease of updating, but so you can see how values are passed to Blazor components.
