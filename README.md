@@ -315,7 +315,7 @@ On your GitHub repository:
 
 애니메이션은 페이지의 요소에 동작을 추가하여 사용자 상호작용을 증가시키고 강조하고자 하는 항목을 주목할 수 있도록 하는 방법입니다. 이번에는 포트폴리오 섹션의 책상 사진에 애니메이션을 추가해 봅시다.
 
-1. Codespaces 내에서 사이트의 스타일시트인 `/src/BlazorApp/wwwroot/css/app.css`을 엽니다. `@keyframes` 정의를 추가하여 왼쪽에서 슬라이드하는 애니메이션 시퀀스를 추가합니다(추가하세요):
+1. Codespaces 내에서 사이트의 스타일시트인 `/src/BlazorApp/wwwroot/css/app.css`을 엽니다. `@keyframes` 정의를 추가하여 왼쪽에서 슬라이드하는 애니메이션 시퀀스를 추가해봅시다:
 
     ```css
     @keyframes slideInLeft {
@@ -328,7 +328,7 @@ On your GitHub repository:
     }
     ```
 
-1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진에 해당 시퀀스로 자신을 애니메이트하도록 지시할 수 있습니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾으세요. 인라인 CSS를 사용하여 스타일을 설정합니다. 그 스타일 정의 내에 다음을 추가합니다:
+1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진에 해당 시퀀스로 자신을 애니메이트하도록 지시할 수 있습니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾으세요. 인라인 CSS를 사용하여 스타일을 설정합니다. 그 스타일 정의 내에 다음을 추가해봅시다:
 
     ```css
     animation: 1s ease-out 0s 1 slideInLeft;
@@ -340,9 +340,9 @@ On your GitHub repository:
     <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover; animation: 1s ease-out 0s 1 slideInLeft;" alt="@(hero.Alt)" />
     ```
 
-코드스페이스에서 이미 사이트가 실행 중이며 변경 사항이 페이지에 자동으로 다시로드될 것입니다. 페이지를 위아래로 스크롤하여 책상 사진이 페이지에 슬라이드되는 것을 관찰하세요.
+코드스페이스에서 이미 사이트가 실행 중이며 변경 사항이 페이지에 자동으로 다시로드될 것입니다. 페이지를 위아래로 스크롤하여 책상 사진이 페이지에 슬라이드되는 것을 관찰할 수 있습니다.
 
-> 🤩 **추가 사항**: 스크롤 다운 화살표도 애니메이션화하세요.
+> 🤩 **추가 사항**: 스크롤 다운 화살표도 애니메이션화하십시오.
 
 
 
@@ -352,9 +352,9 @@ On your GitHub repository:
 
 예를 들어, 포트폴리오 사이트에 교육 섹션을 추가해 보겠습니다.
 
-1. `Components` 폴더 내에 새로운 섹션을 위한 새 컴포넌트를 만듭니다. `Education.razor`라는 새 파일을 추가하세요.
+1. `Components` 폴더 내에 새로운 섹션을 위한 새 컴포넌트를 만듭니다. `Education.razor`라는 새 파일을 추가합니다.
 
-1. `Education.razor` 에 컴포넌트 기능과 포함하고자 하는 정보를 추가합니다:
+1. `Education.razor` 에 컴포넌트 기능과 포함하고자 하는 정보를 추가해봅시다:
 
     ```razor
     <section class="light" id="portfolio">
@@ -362,7 +362,7 @@ On your GitHub repository:
     </section>
     ```
 
-1. `Index.razor`에 페이지 내에서 렌더링되길 원하는 위치에 Education 컴포넌트를 추가하세요:
+1. `Index.razor`에 페이지 내에서 렌더링되길 원하는 위치에 Education 컴포넌트를 추가해봅시다:
 
     ```razor
     <Education />
@@ -383,7 +383,7 @@ On your GitHub repository:
 
 > #### Codespaces 브라우저 앱
 >
-> Edge 또는 Chrome을 사용하는 경우 Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면 브라우저 외부에서 작업할 수 있도록 Codespaces를 앱 내에서 시작할 수 있습니다. 앱 아이콘과 설치 팝업을 찾아서 시도해보세요.
+> Edge 또는 Chrome을 사용하는 경우 Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면 브라우저 외부에서 작업할 수 있도록 Codespaces를 앱 내에서 시작할 수 있습니다. 앱 아이콘과 설치 팝업을 찾아서 시도할 수 있습니다.
 >
 > <img src="./images/codespaces-app.png" alt="Codespaces browser app" style="width: 400px;"/>
 
@@ -391,4 +391,4 @@ On your GitHub repository:
 
 ## 🔎 문제를 발견하거나 개선 아이디어가 있나요?
 
-[우리에게 알려주고 이슈를 오픈](/../../issues/new)해서 이 템플릿 저장소를 더 나은 방향으로 만드는 데 도움을 주세요!
+[우리에게 알려주고 이슈를 오픈](/../../issues/new)해서 이 템플릿 저장소를 더 나은 방향으로 만드는 데 도와 줄 수 있습니다!
