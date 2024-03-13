@@ -252,16 +252,16 @@ On your GitHub repository:
 
 ## 🏆 도전과제
 
-아래는 포트폴리오 사이트를 사용자 정의하고 코드스페이스, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 방법 4가지입니다.
+아래는 포트폴리오 사이트를 사용자 정의하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 방법 4가지입니다.
 
   1. [코드스페이스 사용자 정의하기](#1-customize-your-codespaces)
   1. [부드럽게 섹션으로 이동하기](#2-update-to-smooth-scroll-to-a-section)
-  1. [Desk Photo에 애니메이션 추가하기](#3-animate-desk-photo)
+  1. [책상 사진에 애니메이션 추가하기](#3-animate-desk-photo)
   1. [새로운 섹션 추가하기](#4-add-a-new-section)
 
-### 1. 코드스페이스 사용자 정의하기
+### 1. Codespaces 사용자 정의하기
 
-환경에는 미리 설치된 확장 프로그램이 포함되어 있습니다. 코드스페이스 환경에서 시작할 때 어떤 확장 프로그램을 사용할지 변경할 수 있습니다. 다음과 같이 진행하세요:
+환경에는 미리 설치된 확장 프로그램이 포함되어 있습니다. 코드스페이스 환경에서 시작할 때 어떤 확장 프로그램을 사용할지 변경할 수 있습니다. 다음과 같이 진행합니다(진행하세요):
 
 1. 파일 .devcontainer/devcontainer.json 을 열고 다음 JSON 요소 extensions 을 찾습니다. **extensions**
 
@@ -284,7 +284,7 @@ On your GitHub repository:
   
    위에서 수행한 것은 indent-rainbow의 고유 식별자를 추가한 것입니다. 이렇게 함으로써 코드스페이스가 시작할 때 이 확장 프로그램이 사전 설치되어야 함을 알 수 있습니다.
 
-확장 프로그램의 고유 식별자를 찾기 위해서:
+확장 프로그램의 고유 식별자를 찾기:
 
 * 다음과 같은 확장 프로그램의 웹 페이지로 이동합니다. [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
 * 오른쪽의 **More info** 섹션 아래에서 고유 식별자 필드를 찾습니다.
@@ -295,11 +295,11 @@ On your GitHub repository:
 
 ### 2. 부드럽게 섹션으로 이동하기
 
-사이트 헤더에는 아래의 각 섹션에 대한 링크가 있습니다. 이 링크 중 하나를 클릭하면 페이지가 해당 섹션으로 스크롤됩니다. 그러나 정말로 스크롤이라기보다는 그냥 바로 이동되는 것 같지 않나요?
+사이트 헤더에는 아래의 각 섹션에 대한 링크가 있습니다. 이 링크 중 하나를 클릭하면 페이지가 해당 섹션으로 스크롤됩니다. 스크롤이라기보다는 바로 이동되는 것처럼 보입니다.(그러나 정말로 스크롤이라기보다는 바로 이동되는 것 같지 않나요?)
 
 사용자가 무슨 일이 일어나고 있는지, 페이지에서 어디로 이동하는지를 알 수 있도록 이것을 더 나은 사용자 경험으로 만들어봅시다.
 
-1. `/src/BlazorApp/wwwroot/css/app.css`를 엽니다. 우리는 html에 대한 스타일을 추가해야 합니다. 지금 살펴보면 현재 html 및 body 스타일이 함께 설정되어 있습니다. 따라서 다음 CSS 스니펫을 추가하여 html 요소의 스크롤을 설정해 봅시다:
+1. `/src/BlazorApp/wwwroot/css/app.css`를 엽니다. 우리는 html에 대한 스타일을 추가해야 합니다. 지금 살펴보면 현재 html 및 body 스타일이 함께 설정되어 있습니다. 따라서 다음 CSS 스니펫을 추가하여 html 요소의 스크롤을 설정합시다(설정하세요):
 
     ```css
     html {
@@ -307,15 +307,15 @@ On your GitHub repository:
     }
     ```
 
-이미 코드스페이스에서 사이트가 실행 중이며 변경 사항이 페이지에 자동으로 다시로드될 것입니다. 상단 헤더의 링크를 클릭하여 부드러운 스크롤이 작동하는 것을 확인해보세요.
+이미 코드스페이스에서 사이트가 실행 중이며 변경 사항이 페이지에 자동으로 다시로드될 것입니다. 상단 헤더의 링크를 클릭하여 부드러운 스크롤이 작동하는 것을 확인할 수 있습니다(확인해보세요).
 
 
 
-### 3. Desk Photo에 애니메이션 추가
+### 3. 책상 사진에 애니메이션 추가
 
 애니메이션은 페이지의 요소에 동작을 추가하여 사용자 상호작용을 증가시키고 강조하고자 하는 항목을 주목할 수 있도록 하는 방법입니다. 이번에는 포트폴리오 섹션의 책상 사진에 애니메이션을 추가해 봅시다.
 
-1. Codespaces 내에서 사이트의 스타일시트인 `/src/BlazorApp/wwwroot/css/app.css`을 엽니다. `@keyframes` 정의를 추가하여 왼쪽에서 슬라이드하는 애니메이션 시퀀스를 추가하세요:
+1. Codespaces 내에서 사이트의 스타일시트인 `/src/BlazorApp/wwwroot/css/app.css`을 엽니다. `@keyframes` 정의를 추가하여 왼쪽에서 슬라이드하는 애니메이션 시퀀스를 추가합니다(추가하세요):
 
     ```css
     @keyframes slideInLeft {
@@ -328,7 +328,7 @@ On your GitHub repository:
     }
     ```
 
-1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진에 해당 시퀀스로 자신을 애니메이트하도록 지시할 수 있습니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾으세요. 인라인 CSS를 사용하여 스타일을 설정합니다. 그 스타일 정의 내에 다음을 추가하세요:
+1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진에 해당 시퀀스로 자신을 애니메이트하도록 지시할 수 있습니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾으세요. 인라인 CSS를 사용하여 스타일을 설정합니다. 그 스타일 정의 내에 다음을 추가합니다:
 
     ```css
     animation: 1s ease-out 0s 1 slideInLeft;
