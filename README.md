@@ -1,6 +1,6 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=education/codespaces-project-template-dotnet) 
 
-# GitHub Codespaces로 닷넷(블레이저) 포트폴리오 사이트 만들기 
+# GitHub Codespaces로 닷넷 (블레이저) 포트폴리오 사이트 만들기 
 
 _몇 분만에 자기만의 포트폴리오 사이트를 생성, 커스텀, 그리고 배포까지 할 수 있습니다_ ✨
 
@@ -9,7 +9,7 @@ _몇 분만에 자기만의 포트폴리오 사이트를 생성, 커스텀, 그�
 
 - **누구를 대상으로 하나요?** __모두__ 포트폴리오 사이트를 만들고자 하거나, 웹 개발을 배우고 싶거나, 코드스페이스를 사용해보고 싶은 모든 사람들을 대상입니다.
 - **관련 경험이 있어야 하나요?** __필요 없음__. 경험과 가능한 시간에 따라 포트폴리오 사이트 양식 커스텀을 어느 정도하실지 결정하실 수 있습니다.
-- **필요한 준비물** _없음_. 설치해야 하는 것이 없습니다! 웹 브라우저(Edge, Chrome..)만 있으면 됩니다.
+- **필요한 준비물 :** _없음_. 설치해야 하는 것이 없습니다! 웹 브라우저(Edge, Chrome..)만 있으면 됩니다.
 - **전제 조건:** _없음_. 이 템플릿에는 자신만의 포트폴리오 사이트를 만들 수 있는 개발 환경과 배포 가능한 웹 앱이 포함되어 있습니다.
 
 ## 포트폴리오 사이트 양식에 대해서
@@ -33,32 +33,33 @@ _몇 분만에 자기만의 포트폴리오 사이트를 생성, 커스텀, 그�
 1. [사이트 배포하기](#-deploy-your-web-application)
 
 <details>
-   <summary><b>🎥 Codespaces에 대해 자세히 알아보기 위해 튜토리얼 영상 시리즈를 시청하실 수 있습니다다.</b></summary>
+   <summary><b>🎥 Codespaces에 대해 자세히 알아보기 위해 튜토리얼 영상 시리즈를 시청하실 수 있습니다.</b></summary>
 
    [![Codespaces Tutorial](https://img.youtube.com/vi/ozuDPmcC1io/0.jpg)](https://aka.ms/CodespacesVideoTutorial "Codespaces Tutorial")
 </details>
 
 <br />
 
-## 🗃️ .NET (Blazor) Portfolio template
+## 🗃️ 닷넷 (블레이저) 포트폴리오 양식
 
-This repo is a GitHub template to build a .NET personal portfolio frontend web application using the Blazor WebAssembly framework. The goal is to give you a template to you can immediately utilize to create your own website through Codespaces.
 
-The repo contains the following:
+이 레포지토리는 Blazor WebAssembly 프레임워크를 사용하여 닷넷 개인 포트폴리오 프런트엔드 웹 애플리케이션을 빌드하기 위한 GitHub 양식입니다. Codespaces를 통해 자신만의 웹사이트를 만드는 데 바로 활용할 수 있는 양식 제공을 목표로 합니다.
+
+이 레포지토리는 다음 내용을 담고 있습니다:
 
 - `/.devcontainer`
-  - `.devcontainer/Dockerfile`: Configuration file used by Codespaces to determine operating system and other details.
+  - `.devcontainer/Dockerfile`: 운영 체제 및 기타 세부 정보를 결정하기 위해 Codespaces에서 사용하는 구성 파일
   - `.devcontainer/devcontainer.json`: Configuration file used by Codespaces to configure Visual Studio Code settings, such as the enabling of additional extensions.
-  - `.devcontainer/on-create.sh`: Configuration file used by Codespaces to install additional tools, such as PowerShell.
-- `/src`: Blazor WebAssembly project to build your portfolio site.
-- `.editorconfig`: Settings for [EditorConfig](https://editorconfig.org/) that helps maintain consistent coding styles in Codespaces.
-- `global.json`: Settings for the Blazor WebAssembly app to avoid using pre-released .NET version.
-- `swa-cli.config.json`: Settings for [Azure SWA CLI](https://azure.github.io/static-web-apps-cli/) to run the Blazor WebAssembly app on your Codespaces.
-- `MyPortfolio.sln`: The solution file that contains the Blazor WebAssembly application project.
+  - `.devcontainer/on-create.sh`: 추가 확장 활성화와 같은 Visual Studio Code 설정을 구성하기 위해 Codespaces에서 사용하는 구성 파일
+- `/src`: 포트폴리오 사이트를 구축하기 위한 Blazor WebAssembly 프로젝트
+- `.editorconfig`: Codespaces에서 일관된 코딩 스타일을 유지하는 데 도움이 되는 [EditorConfig](https://editorconfig.org/)에 대한 설정
+- `global.json`: 사전 출시된 .NET 버전을 사용하지 않도록 Blazor WebAssembly 앱 설정을 위한 json 파일
+- `swa-cli.config.json`: Codespaces에서 Blazor WebAssembly 앱을 실행하기 위한 [Azure SWA CLI](https://azure.github.io/static-web-apps-cli/)에 대한 설정
+- `MyPortfolio.sln`: Blazor WebAssembly 애플리케이션 프로젝트가 포함된 솔루션 파일
 
 <br />
 
-## 🚀 Getting started
+## 🚀 시작하기
 
 This portfolio site project is filled with sample data so that you can immediately open Codespaces, see it running, and deploy at any point.
 
