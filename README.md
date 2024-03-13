@@ -383,7 +383,7 @@ On your GitHub repository:
 
 > #### Codespaces 브라우저 앱
 >
-> Edge 또는 Chrome을 사용하는 경우 Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면 브라우저 외부에서 작업할 수 있도록 Codespaces를 앱 내에서 시작할 수 있습니다. 앱 아이콘과 설치 팝업을 찾아서 시도할 수 있습니다.
+> Edge 또는 Chrome을 사용하는 경우 Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면 브라우저 외부에서 작업할 수 있도록 Codespaces를 앱 내에서 시작할 수 있습니다. 앱 아이콘과 설치 팝업을 찾아서 시도할 수 있습니다..
 >
 > <img src="./images/codespaces-app.png" alt="Codespaces browser app" style="width: 400px;"/>
 
