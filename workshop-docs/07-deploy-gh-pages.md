@@ -59,4 +59,84 @@ There is already a GitHub Actions workflow file in the `.github/workflows` direc
         dotnet publish ./workshop/MyPortfolio -c Release -o published
     ```
 
-1. 
+1. Run the following commands to commit and push the changes to the repository.
+
+    ```bash
+    git add .
+    git commit -m "Add my portfolio app to publish to GitHub Pages"
+    git push origin
+    ```
+
+1. Go to your GitHub repository and navigate to the `Settings` tab. Click the "Pages" menu at the left and choose the source to "GitHub Actions" under the "Build and deployment" section.
+
+    ![GitHub Pages settings](./images/07-deploy-gh-pages-01.png)
+
+1. Open the `MyPortfolio/Pages/Home.razor` file and add a blank line at the bottom of the page.
+1. Run the following commands again to commit and push the changes to the repository.
+
+    ```bash
+    git add .
+    git commit -m "Update my portfolio app to publish to GitHub Pages"
+    git push origin
+    ```
+
+1. Check whether your GitHub Actions workflow is running.
+
+    ![GitHub Actions workflow running](./images/07-deploy-gh-pages-02.png)
+
+1. Confirm that your GitHub Actions workflow has completed successfully.
+
+    ![GitHub Actions workflow completed](./images/07-deploy-gh-pages-03.png)
+
+1. Open a new web browser tab and navigate to `https://{{your-github-username}}.github.io/codespaces-project-template-dotnet/`. You should see your portfolio application deployed to GitHub Pages.
+
+    ![GitHub Pages](./images/07-deploy-gh-pages-04.png)
+
+1. If you see this error page, you might need to update your GitHub Actions workflow.
+
+    ![GitHub Pages error](./images/07-deploy-gh-pages-05.png)
+
+1. Open the `publish-gh-pages.yml` file in the `.github/workflows` directory, uncomment the following tasks and change the directory.
+
+    ```yaml
+    - name: Set basepath on index.html
+        shell: pwsh
+        run: |
+          $filepath = "./workshop/MyPortfolio/wwwroot/index.html"
+          $repository = "${{ github.repository }}" -replace "${{ github.repository_owner }}", ""
+      
+          $html = Get-Content -Path $filepath
+          $html -replace "<base href=`"/`" />", "<base href=`"$repository/`" />" | Out-File -Path $filepath -Force
+    
+    - name: Set basepath on JSON objects
+        shell: pwsh
+        run: |
+          $filepath = "./workshop/MyPortfolio/wwwroot/sample-data"
+          $repository = "${{ github.repository }}" -replace "${{ github.repository_owner }}", ""
+      
+          Get-ChildItem -Path $filepath -Filter "*.json" | ForEach-Object {
+              $json = Get-Content -Path $_.FullName
+              $json.Replace("../", "$repository/") | Out-File -Path $_.FullName -Force
+          }
+    ```
+
+1. Open the `MyPortfolio/Pages/Home.razor` file and add a blank line at the bottom of the page.
+1. Run the following commands again to commit and push the changes to the repository.
+
+    ```bash
+    git add .
+    git commit -m "Update my portfolio app to publish to GitHub Pages"
+    git push origin
+    ```
+
+1. Once the GitHub Actions workflow completes successfully, open a new web browser tab and navigate to `https://{{your-github-username}}.github.io/codespaces-project-template-dotnet/`. You should see your portfolio application deployed to GitHub Pages.
+
+    ![GitHub Pages](./images/07-deploy-gh-pages-04.png)
+
+---
+
+Congratulations! You have deployed your portfolio application to GitHub Pages.
+
+So far, you have created a new Blazor WebAssembly application, added a `Home` component, and updated the `Home` component by adding various sections including header, hero, about me, portfolio and footer. You have also extracted each section to component and refactored them to pass parameters from the parent component to child components. Finally, you have deployed your portfolio application to GitHub Pages.
+
+You have completed the workshop! 🎉
