@@ -78,7 +78,7 @@ _몇 분만에 자기만의 포트폴리오 사이트를 생성, 커스텀, 그�
 
     <img src="./images/new-codespace-button.png" alt="Create codespace" style="width:270px;"/>
 
-1. GitHub에서 Codespaces를 초기화 과정을을 기다립니다.
+1. GitHub에서 Codespaces를 초기화 과정을 기다립니다.
 
     <img src="./images/codespaces-initializing.png" alt="Codespaces initializing" style="width: 600px;"/>
 
