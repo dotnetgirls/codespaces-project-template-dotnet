@@ -14,7 +14,7 @@ _빠르게 개인 포트폴리오 사이트를 생성, 커스텀뿐만 아니라
 ## 포트폴리오 사이트 양식에 대해서
 
     
-이 "choose your own adventure" 포트폴리오 양식에는 웹 브라우저만 있으면 쉽게 사용자를 명시하고 배포할 수 있는, [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?WT.mc_id=dotnet-82024-juyoo) 웹 어플리케이션이 있습니다.
+이 "choose your own adventure" 포트폴리오 양식에는 웹 브라우저만 있으면 쉽게 사용자를 지정하고 배포할 수 있는, [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?WT.mc_id=dotnet-82024-juyoo) 웹 어플리케이션이 있습니다.
 
 ![Blazor WebAssembly profile web application](./images/blazorwasm-portfolio-site.gif "Blazor WebAssembly profile web application")
 
