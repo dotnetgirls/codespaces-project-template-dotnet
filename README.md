@@ -283,7 +283,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
   
    위 내용은 indent-rainbow의 고유 식별자를 추가한 것입니다. Codespaces를 시작할 때 이 확장 프로그램을 사전 설치해야 합니다.
 
-확장 프로그램의 고유 식별자를 찾으세요요:
+확장 프로그램의 고유 식별자를 찾으세요:
 
 * 다음 확장 프로그램의 웹 페이지로 이동합니다. [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
 * 오른쪽의 **More info** 섹션 아래에서 고유 식별자 필드를 찾습니다.
