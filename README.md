@@ -165,7 +165,7 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 
 JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 엽니다. 강조하고 싶은 항목에 다음 내용을 포함하세요 : 제목, 설명 및 URL
 
-샘플 디자인은 4개가 있지만, 여러분이 넣넣고 싶은 만큼 샘플 디자인 개수를 선택 가능합니다.
+샘플 디자인은 4개가 있지만, 여러분이 넣고 싶은 만큼 샘플 디자인 개수를 선택 가능합니다.
 
 ```jsonc
 [
@@ -196,40 +196,39 @@ JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 엽니다.
 
 ## 🏃 웹 애플리케이션 배포하기
 
-이 프로젝트에는 **무료**로 [Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo) 및 [GitHub 페이지](https://pages.github.com/)</a>에 배포할 수 있는 설정이 모두 포함되어 있습니다.
+이 프로젝트는 **무료**로 [Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo) 및 [GitHub 페이지](https://pages.github.com/)</a>에 배포할 수 있는 설정이 모두 포함합니다.
 
 ### Azure 정적 웹앱
 
-[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 Azure를 통해 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 마이크로소프트의 호스팅 솔루션입니다. 이 서비스는 Azure Functions, 인증, 스테이징 버전 등을 통해 사이트를 확장할 수 있는 추가적인 기회를 제공합니다.
+[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 Azure를 통해 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 마이크로소프트의 호스팅 솔루션입니다. 이 서비스의 Azure Functions, 인증, 스테이징 버전 등을 통해 사이트를 확장할 수 있습니다.
 
-웹 애플리케이션을 배포하려면 Azure 계정과 GitHub 계정이 모두 필요합니다. Azure 계정이 아직 없다면, 배포 과정 중에 내부에서 생성하거나 아래 링크에서 생성할 수 있습니다 :
+웹 애플리케이션을 배포하려면 Azure 계정과 GitHub 계정이 모두 필요합니다. Azure 계정이 아직 없다면, 배포 과정 중에 생성하거나 아래 링크에서 생성하세요 :
 
-* [학생용 Azure 계정을 만듭니다.(신용 카드가 필요 없습니다.)](https://azure.microsoft.com/free/students/?WT.mc_id=dotnet-82024-juyoo)
-* [새로운 Azure 계정을 만듭니다.](https://azure.microsoft.com/free/?WT.mc_id=dotnet-82024-juyoo)
+* [학생용 Azure 계정을 만들기(신용 카드가 필요 없습니다)](https://azure.microsoft.com/free/students/?WT.mc_id=dotnet-82024-juyoo)
+* [새로운 Azure 계정을 만들기](https://azure.microsoft.com/free/?WT.mc_id=dotnet-82024-juyoo)
 
 Codespaces에서 프로젝트가 열린 상태에서:
 
-1. 왼쪽 사이드바에서 Azure 아이콘을 클릭합니다. 아직 로그인하지 않았다면 로그인하고, Azure를 처음 사용하는 경우 안내에 따라 계정을 만듭니다.
+1. 왼쪽 사이드바의 Azure 아이콘을 클릭합니다. 아직 로그인하지 않았다면 로그인하고, Azure를 처음 사용하는 경우 안내에 따라 계정을 만듭니다.
 1. Azure 메뉴에서 "➕" 기호를 누른 다음 "Create Static Web App"을 선택합니다.
 
    <img src="./images/deploy-to-azure.png" alt="Create Static Web App" style="width: 300px;" />
 
-1. GitHub에 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다. 보류 중인 파일 변경 사항이 있으면 해당 변경 사항을 커밋하라는 메시지가 표시됩니다.
+1. GitHub에 로그인하지 않은 경우 로그인하라는 메시지가 나타납니다. 보류 중인 파일 변경 사항이 있으면 해당 변경 사항을 커밋하라는 메시지가 나타납니다.
 1. 메세지가 표시되면 애플리케이션 정보를 설정하세요 :
     1. **Name for Static Web App**: 정적 웹앱의 이름을 입력합니다. 기본값은 GitHub 리포지토리 이름입니다.
-    1. **Region**: 당신의 지역에서 가장 가까운 곳을 고릅니다.
+    1. **Region**: 여러분의 지역에서 가장 가까운 곳을 고릅니다.
     1. **Project structure**: "Blazor"를 선택합니다.
     1. **Location of application code**: `/src/BlazorApp` 을 입력합니다.
     1. **Output location**: `wwwroot` 를 입력합니다.
-1. 완료되면 화면 하단에 알림이 표시되고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업을 볼 수 있으며, 해당 작업은 현재 실행 중입니다.
+1. 완료되면 화면 하단에 알림이 나타나고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업을 볼 수 있고, 해당 작업은 현재 실행 중입니다.
 
 > 🤩 **보너스**: [Azure 정적 웹앱에 대한 사용자 정의 도메인 설정하기](https://learn.microsoft.com/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=dotnet-82024-juyoo)
 
 ### GitHub 페이지
 
-[GitHub 페이지](https://pages.github.com/)를 사용하면 GitHub 리포지토리에서 직접 웹사이트를 호스팅할 수 있습니다. 이 프로젝트는 최소한의 단계로 포트폴리오를 GitHub 페이지에 배포할 수 있도록 이미 설정되어 있습니다.
-
-당신의 GitHub 리포지토리에서 :
+[GitHub 페이지](https://pages.github.com/)를 사용하면 GitHub 리포지토리에서 직접 웹사이트를 호스팅할 수 있습니다. 이 프로젝트는 간단하게 포트폴리오 사이를 GitHub 페이지에 배포할 수 있습니다.
+여러분의 GitHub 리포지토리에서 :
 
 1. "Settings" 탭으로 이동하고 "Pages" 메뉴로 이동합니다.
 1. _Build and deployment_ 부분에서, source를 **GitHub Actions**으로 선택합니다.
@@ -241,7 +240,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
 
     <img src="./images/deploy-to-ghpages-02.png" alt="Invoke GitHub Actions" style="width: 600px;" />
 
-1. 당신의 GitHub 페이지에 접속합니다.
+1. 여러분의 GitHub 페이지에 접속합니다.
 
     <img src="./images/deploy-to-ghpages-03.png" alt="Visit GitHub Pages" style="width: 600px;" />
 
