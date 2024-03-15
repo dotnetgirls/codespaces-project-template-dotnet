@@ -86,17 +86,17 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 
 <br />
 
-## ✨ 사이트를 4단계에 걸쳐 개인 맞춤 설정하기
+## ✨ 사이트를 4단계에 걸쳐 커스텀하기
 
-이 프로젝트는 쉽게 개인 맞춤 설정할 수 있도록 제작되었습니다. 사이트의 각 섹션은 별도의 컴포넌트이며, 당신의 정보는 한 곳에만 설정되어야 합니다. 이는 업데이트를 쉽게 하기 위한 것일 뿐만 아니라, Blazor 컴포넌트에 값이 전달되는 방식을 확인할 수 있습니다.
+이 프로젝트는 쉽게 커스텀할 수 있도록 제작되었습니다. 사이트의 각 섹션은 별도의 컴포넌트이며, 여러분의 정보는 한 곳에만 저장해야 합니다. 이렇게 함으로써, 업데이트를 쉽게 할 수 있을 뿐더러 어떤 식으로 Blazor 컴포넌트에 값을 전달하는지 보입니다.
+  
+각 단계별로 Codespaces에서 프로젝트를 연 다음 Codespaces 내에서 변경하고, 변경 사항을 커밋할 수 있습니다.
 
-각 단계별로 codespace에서 프로젝트를 연 다음 codespace 내에서 변경하고, 변경 사항을 커밋할 수 있습니다.
-
-> 자세한 codespace 원본 제어 방법은 [Codespace에서 원본 제어 사용](https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)을 참조하면 됩니다.
+> 자세한 Codespaces 원본 제어 방법은 [Codespaces에서 원본 제어 사용](https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)을 참조하세요.
 
 ### 1️⃣ 세부 정보 및 소셜 미디어 계정 추가하기
 
-`/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 을 엽니다. 이는 이름, 제목, 이메일 및 소셜 미디어 계정을 개인 맞춤 설정하는데 필요한 키-값 쌍을 담고 있는 JSON 객체 입니다.
+`/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 을 엽니다. 이 파일은 이름, 제목, 이메일 및 소셜 미디어 계정을 커스텀하는 데 필요한 키와 키에 해당하는 값을 담고 있는 JSON 객체입니다.
 
 ```jsonc
 {
@@ -113,17 +113,17 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 };
 ```
 
-사이트 맨 위에 표시할 이름과 제목을 업데이트합니다.
+사이트 맨 위에 표시하고 싶은 이름과 제목으로 내용을 업데이트합니다.
 
-_선택적인 값들_ 은 이메일 주소와 소셜 계정입니다. 이는 `Footer` 컴포넌트에 사용됩니다. 리스트에 어떤 항목도 포함하지 않거나 빈 문자열 ("")로 설정하면 아이콘과 링크가 표시되지 않습니다.
+이메일 주소와 소셜 계정 입력은 _선택 사항_ 입니다. `Footer` 컴포넌트에 이것들을 사용합니다. 리스트에 어떤 항목도 포함하지 않거나 빈 문자열 ("")로 설정하면 아이콘과 링크가 나타나지 않습니다.
 
 ### 2️⃣ 이미지 업데이트하기
 
-이 포트폴리오 사이트에는 3가지 이미지가 포함되어있습니다 : 상단 배경, "About me" 배경 및 포트폴리오 섹션(책상그림). 이것들은 당신의 컬렉션에서 **풍경** 크기의 이미지를 선택하거나 무단으로 사용할 수 있는 라이선스가 있는 이미지를 찾아 사용할 수 있습니다.
+이 포트폴리오 사이트에는 세 가지 이미지가 포함되어 있습니다 : 상단 배경, "About me" 배경, 포트폴리오 섹션(책상 그림). 기본 세가지 이미지들 대신 사용 허락이 없어도 자유롭게 사용할 수 있는 이미지나, 자신이 소유하고 있는 이미지 중 **가로 형태**의 이미지를 사용 가능합니다.
 
-사진을 찾을 수 있는 사이트는 [Pixabay](https://pixabay.com/)와 [Unsplash](https://unsplash.com)입니다. 사진, 일러스트, 벡터 이미지 등 원하는걸 선택합니다. 이미지를 찾으면 각각을 `/src/BlazorApp/wwwroot/images` 에 간결하고 의미있는 파일 이름으로 저장합니다.
+[Pixabay](https://pixabay.com/) 또는 [Unsplash](https://unsplash.com) 같은 사이트에서 사진을 찾을 수 있습니다. 사진, 일러스트, 벡터 이미지 등 원하는 것을 선택합니다. 이미지를 찾으면 각각을 `/src/BlazorApp/wwwroot/images` 에 간결하고 의미있는 파일명으로 저장합니다.
 
-`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 당신이 선호하는 이미지와 각 이미지에 대한 alt 텍스트를 업데이트하세요 :
+`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 여러분분이 선호하는 이미지와 각 이미지에 대한 alt 텍스트를 업데이트하세요 :
 
 ```jsonc
 [
@@ -153,19 +153,19 @@ _선택적인 값들_ 은 이메일 주소와 소셜 계정입니다. 이는 `Fo
 
 ### 3️⃣ "내 소개" 추가하기
 
-소개 섹션은 사람들에게 당신의 기술과 관심사에 대해 좀 더 알려주는 데 도움이 됩니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 3가지 속성을 업데이트 하세요 : 
+소개 섹션은 사람들에게 여러분의 기술과 관심사에 대해 자세히 알려주는 데 도움이 됩니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 세 가지 속성을 업데이트하세요 : 
 
 * `description`: 나 자신, 직업 목표 및 관심사에 대한 짧은 문장 또는 두 문장.
-* `skillsList`: 사이트에 나열할 기술의 [배열](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)은 원하는 만큼 많거나 적을 수 있습니다.
-* `detailOrQuote`: 나 자신에 대해 더 많은 세부정보를 추가하거나 좋아하는 명언을 넣을 수 있는 긴 블록.
+* `skillsList`: 사이트에 나열할 기술의 [배열](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)은 원하는 만큼 작성.
+* `detailOrQuote`: 나 자신에 대해 더 많은 세부 정보를 추가하거나 좋아하는 명언을 넣을 수 있는 긴 블록.
 
-### 4️⃣ 작업한 프로젝트 추가하고 세부 텍스트 입력하기
+### 4️⃣ 작업한 프로젝트를 추가하고 세부 텍스트 입력하기
 
-이 섹션은 포트폴리오를 업데이트하는 곳으로, 당신이 작업한 프로젝트를 강조합니다. 기사, 비디오, 로고 디자인, 깃허브 프로젝트 등 당신을 강조하는 모든 것으로 구성할 수 있습니다!
+이 섹션은 포트폴리오를 업데이트하는 곳이며, 여러분이 작업한 프로젝트를 강조합니다. 기사, 비디오, 로고 디자인, 깃허브 프로젝트 등 여러분을 부각하는 내용으로 구성할 수 있습니다!
 
-JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 엽니다. 강조하고 싶은 각 항목은 다음이 필요합니다 : 제목, 설명 및 URL
+JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 엽니다. 강조하고 싶은 항목에 다음 내용을 포함하세요 : 제목, 설명 및 URL
 
-샘플 디자인은 4개가 있지만, 포함할 개수는 당신의 선택입니다.
+샘플 디자인은 4개가 있지만, 여러분이 넣넣고 싶은 만큼 샘플 디자인 개수를 선택 가능합니다.
 
 ```jsonc
 [
