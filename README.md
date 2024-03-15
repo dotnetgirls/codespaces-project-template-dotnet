@@ -253,7 +253,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
 
 아래는 포트폴리오 사이트를 커스텀하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 방법 네 가지입니다.
 
-  1. [코드스페이스 커스텀하기](#1-customize-your-codespaces)
+  1. [Codespaces 커스텀하기](#1-customize-your-codespaces)
   1. [부드럽게 섹션으로 이동하기](#2-update-to-smooth-scroll-to-a-section)
   1. [책상 사진에 애니메이션 추가하기](#3-animate-desk-photo)
   1. [새로운 섹션 추가하기](#4-add-a-new-section)
