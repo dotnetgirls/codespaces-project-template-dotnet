@@ -215,7 +215,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
    <img src="./images/deploy-to-azure.png" alt="Create Static Web App" style="width: 300px;" />
 
 1. GitHub에 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다. 보류 중인 파일 변경 사항이 있으면 해당 변경 사항을 커밋하라는 메시지가 표시됩니다.
-1. 메세지가 표시되면 애플리케이션 정보를 설정하세요요 :
+1. 메세지가 표시되면 애플리케이션 정보를 설정하세요 :
     1. **Name for Static Web App**: 정적 웹앱의 이름을 입력합니다. 기본값은 GitHub 리포지토리 이름입니다.
     1. **Region**: 당신의 지역에서 가장 가까운 곳을 고릅니다.
     1. **Project structure**: "Blazor"를 선택합니다.
@@ -261,7 +261,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
 
 ### 1. Codespaces 커스텀하기
 
-환경 파일은 미리 설치된 확장 프로그램을 포함하고 있습니다. Codespaces 환경에서 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 다음과 같이 진행하세요요:
+환경 파일은 미리 설치된 확장 프로그램을 포함하고 있습니다. Codespaces 환경에서 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 다음과 같이 진행하세요:
 
 1. 파일 .devcontainer/devcontainer.json 을 열고 다음 JSON 요소 **extensions**을 찾습니다.
 
@@ -276,7 +276,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
     ]
     ```
 
-1. `indent-rainbow` 확장 프로그램을 추가하세요.  이를 위해 **extensions** 목록으로 이동하여 다음을 추가하세요요:
+1. `indent-rainbow` 확장 프로그램을 추가합니다. 이를 위해 **extensions** 목록으로 이동하여 다음을 추가하세요:
 
     ```jsonc
     "oderwat.indent-rainbow"
@@ -284,7 +284,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
   
    위 내용은 indent-rainbow의 고유 식별자를 추가한 것입니다. Codespaces를 시작할 때 이 확장 프로그램을 사전 설치해야 합니다.
 
-확장 프로그램의 고유 식별자를 찾기:
+확장 프로그램의 고유 식별자를 찾으세요요:
 
 * 다음 확장 프로그램의 웹 페이지로 이동합니다. [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
 * 오른쪽의 **More info** 섹션 아래에서 고유 식별자 필드를 찾습니다.
@@ -315,7 +315,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
 
 애니메이션은 페이지 요소에 동작을 추가합니다. 이렇게 함으로써, 사용자의 상호작용이 증가하고 특정 항목을 강조할 수 있습니다. 이번에는 포트폴리오 섹션의 책상 사진에 애니메이션을 추가해 볼까요?
 
-1. Codespaces 내에서 사이트의 스타일시트인 `/src/BlazorApp/wwwroot/css/app.css`을 엽니다. `@keyframes` 정의를 추가하여 왼쪽에서 슬라이드하는 애니메이션 시퀀스를 추가하세요. :
+1. Codespaces 내에서 사이트의 스타일시트인 `/src/BlazorApp/wwwroot/css/app.css`을 엽니다. `@keyframes` 정의를 추가하여 왼쪽에서 슬라이드하는 애니메이션 시퀀스를 추가하세요 :
 
     ```css
     @keyframes slideInLeft {
@@ -352,9 +352,9 @@ Codespaces에서 이미 사이트가 실행 중이며 변경 사항이 페이지
 
 예를 들어, 포트폴리오 사이트에 교육 섹션을 추가하겠습니다.
 
-1. `Components` 폴더 내에 새로운 섹션을 위한 새 컴포넌트를 만듭니다. `Education.razor`라는 새 파일을 추가하세요.
+1. `Components` 폴더 내에 새로운 섹션을 위한 새 컴포넌트를 만듭니다. `Education.razor`라는 새 파일을 추가합니다.
 
-1. `Education.razor` 에 컴포넌트 기능과 포함하고 싶은 정보를 추가하세요요:
+1. `Education.razor` 에 컴포넌트 기능과 포함하고 싶은 정보를 추가하세요:
 
     ```razor
     <section class="light" id="portfolio">
@@ -383,12 +383,12 @@ Codespaces에서 이미 사이트가 실행 중이며 변경 사항이 페이지
 
 > #### Codespaces 브라우저 앱
 >
-> Edge 또는 Chrome을 사용하는 경우 Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면 브라우저 외부에서 작업할 수 있도록 Codespaces를 앱 내에서 시작 가능합니다. 앱 아이콘과 설치 팝업을 찾아서 시도해보세요.
+> Edge 또는 Chrome을 사용하는 경우, Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면, 브라우저 외부에서 작업할 수 있습니다.
 >
 > <img src="./images/codespaces-app.png" alt="Codespaces browser app" style="width: 400px;"/>
 
 <br />
 
-## 🔎 문제를 발견하거나 개선 아이디어가 있나요?
+## 🔎 문제 사항을 발견하셨거나 개선 희망 사항이 있나요?
 
-[우리에게 알려주고 이슈를 오픈](/../../issues/new)해서 이 양식 리포지토리를 더 나은 방향으로 만드는 데 도움을 주세요!
+[GitHub Issue 열기](/../../issues/new)를 통해 이 양식 리포지토리가 더 나아지도록 도와주세요!
