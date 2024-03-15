@@ -327,7 +327,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
     }
     ```
 
-1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진이 해당 에니메이션 시퀀스로 동작하게 합니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾습니다. 인라인 CSS를 사용하여 스타일을 설정합니다. 그 스타일 정의 내에 다음을 추가하세요:
+1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진이 해당 에니메이션 시퀀스로 동작합니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾습니다. 인라인 CSS를 사용하여 스타일을 설정합니다. 그 스타일 정의 내에 다음을 추가하세요:
 
     ```css
     animation: 1s ease-out 0s 1 slideInLeft;
