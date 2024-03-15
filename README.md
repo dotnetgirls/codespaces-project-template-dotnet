@@ -20,9 +20,7 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 
 ### 빠르게 시작하기
 
-1.  **Use this Template** 버튼을 클릭합니다.
-
-   [![Use this Template](/images/template-button.svg)](https://github.com/education/codespaces-project-template-dotnet/generate)
+1.  **Use this Template** 버튼을 클릭합니다.  [![Use this Template](/images/template-button.svg)](https://github.com/education/codespaces-project-template-dotnet/generate)
 
 1. 리포지토리 소유자를 선택합니다. (예시: 자신의 GitHub 계정)
 1. 새 리포지토리의 이름을 입력합니다.
