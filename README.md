@@ -78,7 +78,7 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 
     <img src="./images/codespaces-initializing.png" alt="Codespaces initializing" style="width: 600px;"/>
 
-1. 완료되면 하단에 터미널 섹션과 함께 Codespaces 로드가 나타납니다. 여기서 `dotnet Restore && dotnet build`가 실행되는 것을 볼 수 있습니다. 완료되면 `swa start`를 실행하여 웹 애플리케이션을 실행할 수 있는 터미널 프롬프트로 돌아갑니다.
+1. 완료되면 하단에 터미널 섹션과 함께 Codespaces 로드가 나타납니다. 여기서 `dotnet Restore && dotnet build`가 실행되는 것을 확인 가능합니다. 완료되면 `swa start`를 실행하여 웹 애플리케이션을 실행할 수 있는 터미널 프롬프트로 돌아갑니다.
 
    웹 애플리케이션이 시작되면 **포트 4280에서 성공적으로 앱이 시작됐다**는 메시지가 나타나고 브라우저 내에서 해당 사이트를 열 수 있습니다. 
 
