@@ -29,7 +29,7 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 1. [사이트 배포하기](#-deploy-your-web-application)
 
 <details>
-   <summary><b>🎥 Codespaces에 대해 자세히 알아보기 위해 튜토리얼 영상 시리즈를 시청 가능합니다다.</b></summary>
+   <summary><b>🎥 Codespaces에 대해 자세히 알아보기 위해 튜토리얼 영상 시리즈를 시청 가능합니다.</b></summary>
 
    [![Codespaces Tutorial](https://img.youtube.com/vi/ozuDPmcC1io/0.jpg)](https://aka.ms/CodespacesVideoTutorial "Codespaces Tutorial")
 </details>
@@ -123,7 +123,7 @@ _선택적인 값들_ 은 이메일 주소와 소셜 계정입니다. 이는 `Fo
 
 사진을 찾을 수 있는 사이트는 [Pixabay](https://pixabay.com/)와 [Unsplash](https://unsplash.com)입니다. 사진, 일러스트, 벡터 이미지 등 원하는걸 선택합니다. 이미지를 찾으면 각각을 `/src/BlazorApp/wwwroot/images` 에 간결하고 의미있는 파일 이름으로 저장합니다.
 
-`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 당신이 선호하는 이미지와 각 이미지에 대한 alt 텍스트를 업데이트합니다 :
+`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 당신이 선호하는 이미지와 각 이미지에 대한 alt 텍스트를 업데이트하세요 :
 
 ```jsonc
 [
@@ -153,7 +153,7 @@ _선택적인 값들_ 은 이메일 주소와 소셜 계정입니다. 이는 `Fo
 
 ### 3️⃣ "내 소개" 추가하기
 
-소개 섹션은 사람들에게 당신의 기술과 관심사에 대해 좀 더 알려주는 데 도움이 됩니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 3가지 속성을 업데이트 합니다 : 
+소개 섹션은 사람들에게 당신의 기술과 관심사에 대해 좀 더 알려주는 데 도움이 됩니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 3가지 속성을 업데이트 하세요 : 
 
 * `description`: 나 자신, 직업 목표 및 관심사에 대한 짧은 문장 또는 두 문장.
 * `skillsList`: 사이트에 나열할 기술의 [배열](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)은 원하는 만큼 많거나 적을 수 있습니다.
@@ -215,7 +215,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
    <img src="./images/deploy-to-azure.png" alt="Create Static Web App" style="width: 300px;" />
 
 1. GitHub에 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다. 보류 중인 파일 변경 사항이 있으면 해당 변경 사항을 커밋하라는 메시지가 표시됩니다.
-1. 메세지가 표시되면 애플리케이션 정보를 설정합니다 :
+1. 메세지가 표시되면 애플리케이션 정보를 설정하세요요 :
     1. **Name for Static Web App**: 정적 웹앱의 이름을 입력합니다. 기본값은 GitHub 리포지토리 이름입니다.
     1. **Region**: 당신의 지역에서 가장 가까운 곳을 고릅니다.
     1. **Project structure**: "Blazor"를 선택합니다.
@@ -261,7 +261,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
 
 ### 1. Codespaces 커스텀하기
 
-환경 파일은 미리 설치된 확장 프로그램을 포함하고 있습니다. Codespaces 환경에서 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 다음과 같이 진행합니다:
+환경 파일은 미리 설치된 확장 프로그램을 포함하고 있습니다. Codespaces 환경에서 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 다음과 같이 진행하세요요:
 
 1. 파일 .devcontainer/devcontainer.json 을 열고 다음 JSON 요소 **extensions**을 찾습니다.
 
@@ -276,7 +276,7 @@ Codespaces에서 프로젝트가 열린 상태에서:
     ]
     ```
 
-1. `indent-rainbow` 확장 프로그램을 추가하세요.  이를 위해 **extensions** 목록으로 이동하여 다음을 추가합니다:
+1. `indent-rainbow` 확장 프로그램을 추가하세요.  이를 위해 **extensions** 목록으로 이동하여 다음을 추가하세요요:
 
     ```jsonc
     "oderwat.indent-rainbow"
@@ -348,13 +348,13 @@ Codespaces에서 이미 사이트가 실행 중이며 변경 사항이 페이지
 
 ### 4. 새로운 섹션 추가하기
 
-포트폴리오 사이트에 몇 가지 기본 섹션을 시작했지만, 여러분은 개인 창의적인 자유를 가지고 여러분의 사이트에 추가하고 싶은 새로운 섹션을 추가 가능합니다.
+기본 섹션으로 포트폴리오 사이트를 이미 만들었지만, 섹션을 추가해 원하는 대로 커스텀 가능합니다.
 
-예를 들어, 포트폴리오 사이트에 교육 섹션을 추가해 보겠습니다.
+예를 들어, 포트폴리오 사이트에 교육 섹션을 추가하겠습니다.
 
 1. `Components` 폴더 내에 새로운 섹션을 위한 새 컴포넌트를 만듭니다. `Education.razor`라는 새 파일을 추가하세요.
 
-1. `Education.razor` 에 컴포넌트 기능과 포함하고자 하는 정보를 추가합니다:
+1. `Education.razor` 에 컴포넌트 기능과 포함하고 싶은 정보를 추가하세요요:
 
     ```razor
     <section class="light" id="portfolio">
@@ -383,7 +383,7 @@ Codespaces에서 이미 사이트가 실행 중이며 변경 사항이 페이지
 
 > #### Codespaces 브라우저 앱
 >
-> Edge 또는 Chrome을 사용하는 경우 Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면 브라우저 외부에서 작업할 수 있도록 Codespaces를 앱 내에서 시작 가능합니다.. 앱 아이콘과 설치 팝업을 찾아서 시도해보세요.
+> Edge 또는 Chrome을 사용하는 경우 Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 표시됩니다. Codespaces 앱을 사용하면 브라우저 외부에서 작업할 수 있도록 Codespaces를 앱 내에서 시작 가능합니다. 앱 아이콘과 설치 팝업을 찾아서 시도해보세요.
 >
 > <img src="./images/codespaces-app.png" alt="Codespaces browser app" style="width: 400px;"/>
 
