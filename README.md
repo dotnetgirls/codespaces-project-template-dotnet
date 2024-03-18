@@ -86,17 +86,17 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 
 <br />
 
-## ✨ 사이트를 네 단계에 걸쳐 커스텀하기
+## ✨ 사이트를 네 단계에 걸쳐 수정하기
 
-이 프로젝트는 쉽게 커스텀할 수 있도록 제작되었습니다. 사이트의 각 섹션은 별도의 컴포넌트이며, 여러분의 정보는 한 곳에만 저장해야 합니다. 이렇게 함으로써, 업데이트를 쉽게 할 수 있을 뿐더러 어떤 식으로 Blazor 컴포넌트에 값을 전달하는지 보입니다.
+이 프로젝트는 사용자가 원하는대로 쉽게 수정할 수 있습니다. 사이트의 각 섹션은 별도의 컴포넌트이며, 사용자의 정보는 한 곳에만 저장해야 합니다. 이렇게 함으로써 업데이트를 쉽게 할 수 있고, 어떤 방식으로 Blazor 컴포넌트에 값을 전달하는지 확인할 수 있습니다.
   
-각 단계별로 Codespaces에서 프로젝트를 연 다음 Codespaces 내에서 변경하고, 변경 사항을 커밋할 수 있습니다.
+각 단계별로 Codespaces에서 프로젝트를 연 다음 내용을 변경하고, 변경 사항을 커밋할 수 있습니다.
 
 > 자세한 Codespaces 원본 제어 방법은 [Codespaces에서 원본 제어 사용](https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)을 참조하세요.
 
 ### 1️⃣ 세부 정보 및 소셜 미디어 계정 추가하기
 
-`/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 을 엽니다. 이 파일은 이름, 제목, 이메일 및 소셜 미디어 계정을 커스텀하는 데 필요한 키와 키에 해당하는 값을 담고 있는 JSON 객체입니다.
+`/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 을 엽니다. 이 파일은 이름, 제목, 이메일 및 소셜 미디어 계정을 사용자가 원하는대로 수정하는 데 필요한 키와 그 키에 해당하는 값을 담고 있는 JSON 객체입니다.
 
 ```jsonc
 {
@@ -113,17 +113,17 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 };
 ```
 
-사이트 맨 위에 표시하고 싶은 이름과 제목으로 내용을 업데이트합니다.
+사이트 상단에 표시되는 이름과 제목을 원하는 대로 업데이트하세요.
 
-이메일 주소와 소셜 계정 입력은 _선택 사항_ 입니다. `Footer` 컴포넌트에 이것들을 사용합니다. 리스트에 어떤 항목도 포함하지 않거나 빈 문자열 ("")로 설정하면 아이콘과 링크가 나타나지 않습니다.
+이메일 주소와 소셜 계정 입력은 _선택 사항_ 입니다. 이들은 `Footer` 컴포넌트에 사용됩니다. 목록에 포함하지 않거나 빈 문자열("")로 설정하면 해당 아이콘과 링크가 표시되지 않습니다.
 
 ### 2️⃣ 이미지 업데이트하기
 
-이 포트폴리오 사이트에는 세 가지 이미지가 포함되어 있습니다 : 상단 배경, "About me" 배경, 포트폴리오 섹션(책상 그림). 기본 세가지 이미지들 대신 사용 허락이 없어도 자유롭게 사용할 수 있는 이미지나, 자신이 소유하고 있는 이미지 중 **가로 형태**의 이미지를 사용 가능합니다.
+이 포트폴리오 사이트에는 세 가지 이미지가 있습니다 : 상단 배경, "About me" 배경, 포트폴리오 섹션(책상 그림). 이 기본 세가지 이미지들 대신 사용 허락이 없어도 자유롭게 사용할 수 있는 이미지나, 자신이 소유하고 있는 이미지 중 **가로 형태**의 이미지를 넣으면 됩니다.
 
-[Pixabay](https://pixabay.com/) 또는 [Unsplash](https://unsplash.com) 같은 사이트에서 사진을 찾을 수 있습니다. 사진, 일러스트, 벡터 이미지 등 원하는 것을 선택합니다. 이미지를 찾으면 각각을 `/src/BlazorApp/wwwroot/images` 에 간결하고 의미있는 파일명으로 저장합니다.
+[Pixabay](https://pixabay.com/) 또는 [Unsplash](https://unsplash.com) 같은 사이트에서 사진을 찾을 수 있습니다. 사진, 일러스트, 벡터 이미지 등 원하는 이미지를 찾으면 각각을 `/src/BlazorApp/wwwroot/images` 에 간결하고 의미있는 파일명으로 저장합니다.
 
-`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 여러분이 선호하는 이미지와 각 이미지에 대한 alt 텍스트를 업데이트하세요 :
+`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 좀 전에 찾은 이미지들로 업데이트하고 각 이미지의 alt 텍스트를 업데이트하세요 :
 
 ```jsonc
 [
@@ -151,21 +151,21 @@ _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀�
 ]
 ```
 
-### 3️⃣ "내 소개" 추가하기
+### 3️⃣ "about me" 추가하기
 
-소개 섹션은 사람들에게 여러분의 기술과 관심사에 대해 자세히 알려주는 데 도움이 됩니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 세 가지 속성을 업데이트하세요 : 
+"about me" 섹션은 사람들에게 여러분의 기술과 관심사에 대한 정보를 제공하는데 도움이 됩니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 세 가지 속성을 업데이트하세요 : 
 
 * `description`: 나 자신, 직업 목표 및 관심사에 대한 짧은 문장 또는 두 문장.
-* `skillsList`: 사이트에 나열할 기술의 [배열](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)은 원하는 만큼 작성.
+* `skillsList`: 사이트에 나열할 기술 [목록](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)은 원하는 만큼 작성.
 * `detailOrQuote`: 나 자신에 대해 더 많은 세부 정보를 추가하거나 좋아하는 명언을 넣을 수 있는 긴 블록.
 
 ### 4️⃣ 작업한 프로젝트를 추가하고 세부 텍스트 입력하기
 
-이 섹션은 포트폴리오를 업데이트하는 곳이며, 여러분이 작업한 프로젝트를 강조합니다. 기사, 비디오, 로고 디자인, 깃허브 프로젝트 등 여러분을 부각하는 내용으로 구성 가능합니다.
+이 섹션은 여러분이 작업한 프로젝트를 강조하는 포트폴리오입니다. 기사, 비디오, 로고 디자인, GitHub 프로젝트 등 여러분을 부각하는 내용으로 구성할 수 있습니다!
 
-JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 엽니다. 강조하고 싶은 항목에 다음 내용을 포함하세요 : 제목, 설명 및 URL
+JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 열고, 강조하려는 각 항목에는 다음이 필요합니다 : 제목, 설명, URL
 
-샘플 디자인은 4개가 있지만, 여러분이 넣고 싶은 만큼 샘플 디자인 개수를 선택 가능합니다.
+샘플 디자인에는 네 개의 항목이 있지만, 항목 수는 각자 자유롭게 선택하면 됩니다.
 
 ```jsonc
 [
@@ -196,39 +196,39 @@ JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 엽니다.
 
 ## 🏃 웹 애플리케이션 배포하기
 
-이 프로젝트는 **무료**로 [Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo) 및 [GitHub 페이지](https://pages.github.com/)</a>에 배포할 수 있는 설정이 모두 포함합니다.
+이 프로젝트는 **무료**로 [Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo) 및 [GitHub 페이지](https://pages.github.com/)</a>에 배포할 수 있습니다.
 
 ### Azure 정적 웹앱
 
-[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 Azure를 통해 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 마이크로소프트의 호스팅 솔루션입니다. 이 서비스의 Azure Functions, 인증, 스테이징 버전 등을 통해 사이트를 확장할 수 있습니다.
+[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 마이크로소프트의 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 호스팅 솔루션입니다. 이 서비스는 Azure Functions, 인증, 스테이징 버전 등 Azure를 통해 사이트를 확장할 수 있습니다.
 
 웹 애플리케이션을 배포하려면 Azure 계정과 GitHub 계정이 모두 필요합니다. Azure 계정이 아직 없다면, 배포 과정 중에 생성하거나 아래 링크에서 생성하세요 :
 
 * [학생용 Azure 계정을 만들기(신용 카드가 필요 없습니다)](https://azure.microsoft.com/free/students/?WT.mc_id=dotnet-82024-juyoo)
 * [새로운 Azure 계정을 만들기](https://azure.microsoft.com/free/?WT.mc_id=dotnet-82024-juyoo)
 
-Codespaces에서 프로젝트가 열린 상태에서:
+Codespaces에서 프로젝트를 열고 :
 
 1. 왼쪽 사이드바의 Azure 아이콘을 클릭합니다. 아직 로그인하지 않았다면 로그인하고, Azure를 처음 사용하는 경우 안내에 따라 계정을 만듭니다.
 1. Azure 메뉴에서 "➕" 기호를 누른 다음 "Create Static Web App"을 선택합니다.
 
    <img src="./images/deploy-to-azure.png" alt="Create Static Web App" style="width: 300px;" />
 
-1. GitHub에 로그인하지 않은 경우 로그인하라는 메시지가 나타납니다. 보류 중인 파일 변경 사항이 있으면 해당 변경 사항을 커밋하라는 메시지가 나타납니다.
-1. 메세지가 표시되면 애플리케이션 정보를 설정하세요 :
+1. GitHub에 로그인하지 않은 경우 로그인하라는 메시지가 나타납니다. 보류 중인 파일 변경 사항이 있는 경우 이를 커밋하라는 메시지가 표시됩니다.
+1. 애플리케이션 정보를 설정할 때 :
     1. **Name for Static Web App**: 정적 웹앱의 이름을 입력합니다. 기본값은 GitHub 리포지토리 이름입니다.
     1. **Region**: 여러분의 지역에서 가장 가까운 곳을 고릅니다.
     1. **Project structure**: "Blazor"를 선택합니다.
     1. **Location of application code**: `/src/BlazorApp` 을 입력합니다.
     1. **Output location**: `wwwroot` 를 입력합니다.
-1. 완료되면 화면 하단에 알림이 나타나고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업을 볼 수 있고, 해당 작업은 현재 실행 중입니다.
+1. 완료되면 화면 하단에 알림이 나타나고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업을 볼 수 있으며, 현재 실행 중인 것을 확인할 수 있습니다.
 
-> 🤩 **보너스**: [Azure 정적 웹앱에 대한 사용자 정의 도메인 설정하기](https://learn.microsoft.com/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=dotnet-82024-juyoo)
+> 🤩 **보너스**: [Azure 정적 웹앱에 사용자가 원하는 도메인 설정하기](https://learn.microsoft.com/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=dotnet-82024-juyoo)
 
 ### GitHub 페이지
 
-[GitHub 페이지](https://pages.github.com/)를 사용하면 GitHub 리포지토리에서 직접 웹사이트를 호스팅할 수 있습니다. 이 프로젝트는 간단하게 포트폴리오 사이를 GitHub 페이지에 배포할 수 있습니다.
-여러분의 GitHub 리포지토리에서 :
+[GitHub 페이지](https://pages.github.com/)를 사용하면 GitHub 리포지토리에서 웹사이트를 직접 호스팅할 수 있습니다. 이 프로젝트는 간단하게 포트폴리오를 GitHub 페이지에 배포할 수 있습니다.
+GitHub 리포지토리에서 :
 
 1. "Settings" 탭으로 이동하고 "Pages" 메뉴로 이동합니다.
 1. _Build and deployment_ 부분에서, source를 **GitHub Actions**으로 선택합니다.
@@ -240,11 +240,11 @@ Codespaces에서 프로젝트가 열린 상태에서:
 
     <img src="./images/deploy-to-ghpages-02.png" alt="Invoke GitHub Actions" style="width: 600px;" />
 
-1. 여러분의 GitHub 페이지에 접속합니다.
+1. GitHub 페이지에 접속합니다.
 
     <img src="./images/deploy-to-ghpages-03.png" alt="Visit GitHub Pages" style="width: 600px;" />
 
-> 🤩 **보너스**: [GitHub 페이지 사이트에 대한 사용자 정의 도메인 설정하기](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+> 🤩 **보너스**: [GitHub 페이지 사이트에 사용자가 원하는 도메인 설정하기](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 <br />
 
