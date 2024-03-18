@@ -1,6 +1,6 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=education/codespaces-project-template-dotnet) 
 
-# GitHub Codespaces로 닷넷 (Blazor) 포트폴리오 사이트 만들기 test
+# GitHub Codespaces로 닷넷 (Blazor) 포트폴리오 사이트 만들기
 
 _빠르게 개인 포트폴리오 사이트를 생성하는 것부터 커스텀과 배포까지 모두 가능합니다._ ✨
 
