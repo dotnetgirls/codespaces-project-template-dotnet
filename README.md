@@ -250,7 +250,7 @@ GitHub 리포지토리에서 :
 
 ## 🏆 도전과제
 
-아래는 포트폴리오 사이트를 커스텀하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 네가지 추가적인 방법입니다.
+아래는 포트폴리오 사이트를 커스텀하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 방법 네가지입니다.
 
   1. [Codespaces 커스텀하기](#1-customize-your-codespaces)
   1. [부드럽게 섹션으로 이동하기](#2-update-to-smooth-scroll-to-a-section)
