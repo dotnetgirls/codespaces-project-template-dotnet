@@ -7,7 +7,7 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 이 템플릿 리포지토리는 곧바로 사용할 수 있는 기본 코드 셋과 개발 환경을 갖추고 있습니다. 따라서 별다른 설정 없이도 곧바로 Codespaces를 실행시켜 웹사이트 코드를 수정할 수 있습니다.
 
 - **누가 이 리포지토리를 쓸 수 있나요?** __누구든 사용할 수 있습니다__. 포트폴리오 사이트를 만들고 싶은 __누구나__, 웹개발을 배우고 싶은 __누구나__, Codespaces를 테스트해 보고 싶은 __누구나__ 쓸 수 있습니다.
-- **경력이 필요한가요?** __필요없습니다__. 경험이 있으면 있는대로 없으면 없는대로, 시간이 있으면 있는대로, 없으면 없는대로 원하는 만큼 수정해서 쓰면 됩니다.
+- **경력이 필요한가요?** __필요없습니다__. 경험이 있으면 있는대로 없으면 없는대로, 시간이 있으면 있는대로 없으면 없는대로 원하는 만큼 수정해서 쓰면 됩니다.
 - **개발 도구가 필요한가요?** _필요없습니다_. 아무것도 설치할 필요가 없습니다. 웹 브라우저만 있으면 됩니다.
 - **전제 조건이 있나요?** _없습니다_. 이 템플릿은 자신의 포트폴리오 웹사이트를 제작해서 배포할 때 까지 필요한 모든 개발 환경을 준비해 뒀습니다.
 
@@ -40,7 +40,7 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 이 리포지토리는 Blazor WebAssembly 프레임워크를 사용하여 .NET 기반의 개인 포트폴리오용 프론트엔드 웹 애플리케이션을 만들기 위한 GitHub 템플릿 리포지토리입니다. Codespaces를 통해 개인 웹사이트를 만드는 데 있어서 곧바로 활용할 수 있는 템플릿을 제공하고자 함입니다.
 
-이 리포지토리는 아래와 같은 내용을 포함합니다:
+이 리포지토리는 아래와 같은 내용을 포함합니다 :
 
 - `/.devcontainer`
   - `.devcontainer/Dockerfile`: Codespaces가 사용하는 컨테이너 구성 파일로, 운영 체제 및 기타 세부 정보를 담고 있음
@@ -58,7 +58,7 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 이 포트폴리오 사이트 프로젝트는 샘플 데이터가 이미 있어, 바로 Codespaces를 열어 웹 앱이 실행되는지 확인하고, 언제든지 배포 가능합니다.
 
-시작할 때 필요한 개발 환경이 모두 마련되어 있습니다. [.NET Codespaces 템플릿](https://github.com/education/codespaces-teaching-template-dotnet)을 기반으로 이미 설정된 사용할 수 있는 항목:
+시작할 때 필요한 개발 환경이 모두 마련되어 있습니다. [.NET Codespaces 템플릿](https://github.com/education/codespaces-teaching-template-dotnet)을 기반으로 이미 설정된 사용할 수 있는 항목 :
 
 - 포트폴리오 사이트의 각 섹션에 대한 구성 요소가 포함된 간단한 [Blazor WebAssembly](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?WT.mc_id=dotnet-82024-juyoo) 애플리케이션
 - 배포 시 사이트를 구축하기 위한 [SWA CLI](https://azure.github.io/static-web-apps-cli/)
@@ -221,7 +221,7 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
     1. **Output location**: `wwwroot` 를 입력합니다.
 1. 입력이 끝나면 화면 하단에 알림이 나타나고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업이 보이고, 현재 실행 중인 것을 확인할 수 있습니다.
 
-> 🤩 **보너스**: [Azure 정적 웹앱에 사용자가 원하는 도메인으로 설정하기](https://learn.microsoft.com/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=dotnet-82024-juyoo)
+> 🤩 **보너스** : [Azure 정적 웹앱에 사용자가 원하는 도메인으로 설정하기](https://learn.microsoft.com/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=dotnet-82024-juyoo)
 
 ### GitHub Pages
 
@@ -243,7 +243,7 @@ GitHub 리포지토리에서 :
 
     <img src="./images/deploy-to-ghpages-03.png" alt="Visit GitHub Pages" style="width: 600px;" />
 
-> 🤩 **보너스**: [GitHub Pages 사이트에 사용자가 원하는 도메인으로 설정하기](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+> 🤩 **보너스** : [GitHub Pages 사이트에 사용자가 원하는 도메인으로 설정하기](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 <br />
 
@@ -274,7 +274,7 @@ GitHub 리포지토리에서 :
     ]
     ```
 
-1. **extensions** 목록으로 이동하여 `indent-rainbow` 확장 프로그램을 추가하세요:
+1. **extensions** 목록으로 이동하여 `indent-rainbow` 확장 프로그램을 추가하세요 :
 
     ```jsonc
     "oderwat.indent-rainbow"
@@ -282,7 +282,7 @@ GitHub 리포지토리에서 :
   
    이를 통해 [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)의 고유 식별자를 추가했습니다. Codespaces를 시작할 때 이 확장 프로그램을 사전 설치해야 합니다.
 
-확장 프로그램의 고유 식별자를 찾으세요:
+확장 프로그램의 고유 식별자를 찾으세요 :
 
 * 이 링크를 통해 확장 프로그램의 웹 페이지로 이동합니다.  [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
 * 오른쪽의 **More info** 섹션 아래에 고유 식별자 필드를 배치합니다.
@@ -298,7 +298,7 @@ GitHub 리포지토리에서 :
 
 사용자가 페이지가 어떻게 이동하고 페이지에서 어떤 일이 일어나고 있는지 느낄 수 있도록 속도를 줄여 봅시다. 이는 사용자가 사이트를 더 쉽게 이해하고 이용하도록 만들어 줍니다.
 
-1. `/src/BlazorApp/wwwroot/css/app.css`를 엽니다. 이 파일은 포트폴리오 애플리케이션을 위한 스타일 시트입니다. `html` 태그에 대한 스타일을 추가합시다. 코드를 보면 현재 `html`과 `body` 스타일이 함께 설정되어 있는 것이 보입니다. 따라서 `html`요소의 스크롤하는 방식을 설정하기 위해 아래의 CSS 스니펫을 추가하세요:
+1. `/src/BlazorApp/wwwroot/css/app.css`를 엽니다. 이 파일은 포트폴리오 애플리케이션을 위한 스타일 시트입니다. `html` 태그에 대한 스타일을 추가합시다. 코드를 보면 현재 `html`과 `body` 스타일이 함께 설정되어 있는 것이 보입니다. 따라서 `html`요소의 스크롤하는 방식을 설정하기 위해 아래의 CSS 스니펫을 추가하세요 :
 
     ```css
     html {
@@ -327,13 +327,13 @@ GitHub 리포지토리에서 :
     }
     ```
 
-1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진이 시퀀스대로 동작하도록 합니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾습니다. 이 태그를 꾸미기 위해 인라인 CSS를 사용합니다. 스타일 정의 내에 다음을 추가하세요:
+1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진이 시퀀스대로 동작하도록 합니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾습니다. 이 태그를 꾸미기 위해 인라인 CSS를 사용합니다. 스타일 정의 내에 다음을 추가하세요 :
 
     ```css
     animation: 1s ease-out 0s 1 slideInLeft;
     ```
 
-    이미지 태그는 아래와 같아야 합니다:
+    이미지 태그는 아래와 같아야 합니다 :
 
     ```html
     <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover; animation: 1s ease-out 0s 1 slideInLeft;" alt="@(hero.Alt)" />
@@ -341,7 +341,7 @@ GitHub 리포지토리에서 :
 
 포트폴리오 사이트가 Codespaces에서 실행 중이기 때문에 자동으로 변경 사항을 불러옵니다. 페이지를 위아래로 스크롤하여 책상 사진이 미끄러지듯 움직이는 것을 확인하세요.  
 
-> 🤩 **추가 사항**: 스크롤 다운 화살표에 동작 추가하기
+> 🤩 **추가 사항** : 스크롤 다운 화살표에 동작 추가하기
 
 
 
@@ -353,7 +353,7 @@ GitHub 리포지토리에서 :
 
 1. `Components` 폴더 내에 새 섹션을 위한 새 컴포넌트를 생성합니다. `Education.razor`라는 새 파일을 추가합니다.
 
-1. `Education.razor` 파일에 컴포넌트 함수, export, 포함하고 싶은 정보를 추가하세요:
+1. `Education.razor` 파일에 컴포넌트 함수, export, 포함하고 싶은 정보를 추가하세요 :
 
     ```razor
     <section class="light" id="portfolio">
@@ -361,7 +361,7 @@ GitHub 리포지토리에서 :
     </section>
     ```
 
-1. `Index.razor` 파일을 열고 페이지 내에서 렌더링되길 원하는 위치에 Education 컴포넌트를 추가하세요:
+1. `Index.razor` 파일을 열고 페이지 내에서 렌더링되길 원하는 위치에 Education 컴포넌트를 추가하세요 :
 
     ```razor
     <Education />
