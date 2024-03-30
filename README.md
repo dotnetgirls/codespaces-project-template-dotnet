@@ -195,19 +195,18 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 ## 🏃 웹 애플리케이션 배포하기
 
-이 프로젝트는 **무료**로 [Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo) 및 [GitHub 페이지](https://pages.github.com/)</a>에 배포할 수 있습니다.
+이 프로젝트는 **무료**로 [Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo) 및 [GitHub Pages](https://pages.github.com/)</a>에 배포할 수 있습니다.
 
 ### Azure 정적 웹앱
 
-[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 Microsoft의 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 호스팅 솔루션입니다. 이 서비스는 Azure Functions, 인증, 스테이징 버전 등 Azure를 통해 사이트를 확장할 수 있습니다.
+[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 Microsoft의 정적 사이트(또는 서버가 아닌 사용자의 브라우저에서 렌더링되는 사이트)를 위한 호스팅 솔루션입니다. 이 서비스는 Azure Functions, 인증, 스테이징 버전 등 Azure를 통해 사이트를 확장할 수 있습니다.
 
 웹 애플리케이션을 배포하려면 Azure 계정과 GitHub 계정이 모두 필요합니다. Azure 계정이 아직 없다면, 배포 과정 중에 생성하거나 아래 링크에서 생성하세요 :
 
-* [학생용 Azure 계정을 만들기(신용 카드가 필요 없습니다)](https://azure.microsoft.com/free/students/?WT.mc_id=dotnet-82024-juyoo)
-* [새로운 Azure 계정을 만들기](https://azure.microsoft.com/free/?WT.mc_id=dotnet-82024-juyoo)
+* [학생용 Azure 계정 만들기(신용 카드 필요 없음)](https://azure.microsoft.com/free/students/?WT.mc_id=dotnet-82024-juyoo)
+* [새로운 Azure 계정 만들기](https://azure.microsoft.com/free/?WT.mc_id=dotnet-82024-juyoo)
 
-Codespaces에서 프로젝트를 열고 :
-
+1. Codespaces에서 프로젝트를 엽니다.  
 1. 왼쪽 사이드바의 Azure 아이콘을 클릭합니다. 아직 로그인하지 않았다면 로그인하고, Azure를 처음 사용하는 경우 안내에 따라 계정을 만듭니다.
 1. Azure 메뉴에서 "➕" 기호를 누른 다음 "Create Static Web App"을 선택합니다.
 
@@ -226,7 +225,7 @@ Codespaces에서 프로젝트를 열고 :
 
 ### GitHub Pages
 
-[GitHub Pages](https://pages.github.com/)를 사용하면 GitHub 리포지토리에서 웹사이트를 직접 호스팅할 수 있습니다. 이 프로젝트는 간단하게 포트폴리오를 GitHub Pages에 배포할 수 있습니다.  
+[GitHub Pages](https://pages.github.com/)를 사용하면 GitHub 리포지토리에서 웹사이트를 직접 호스팅할 수 있습니다. 이 프로젝트는 포트폴리오를 GitHub Pages에 간단하게 배포할 수 있습니다.  
   
 GitHub 리포지토리에서 :  
 
