@@ -251,18 +251,18 @@ GitHub 리포지토리에서 :
 
 ## 🏆 도전과제
 
-아래는 포트폴리오 사이트를 커스텀하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 방법 네가지입니다.
+아래는 포트폴리오 사이트를 커스텀하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 네 가지 방법입니다.
 
-  1. [Codespaces 커스텀하기](#1-customize-your-codespaces)
+  1. [Codespaces 작업 환경 설정하기](#1-customize-your-codespaces)
   1. [부드럽게 섹션으로 이동하기](#2-update-to-smooth-scroll-to-a-section)
   1. [책상 사진에 애니메이션 추가하기](#3-animate-desk-photo)
   1. [새로운 섹션 추가하기](#4-add-a-new-section)
 
-### 1. Codespaces 커스텀하기
+### 1. Codespaces 작업 환경 설정하기
 
-환경 파일은 미리 설치된 확장 프로그램을 포함합니다. Codespaces 환경에서 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 아래를 따라 진행하세요:
+`.devcontainer/devcontainer.json`에는 Codespaces 환경 구성에 필요한 확장 프로그램 정보가 담겨 있습니다. Codespaces를 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 아래를 따라 진행하세요:
 
-1. 파일 .devcontainer/devcontainer.json 을 열고 JSON 요소 **extensions**을 찾습니다.
+1. 파일 _.devcontainer/devcontainer.json_ 을 열고 JSON 요소 **extensions**을 찾습니다.
 
     ```jsonc
     "extensions": [
@@ -281,24 +281,24 @@ GitHub 리포지토리에서 :
     "oderwat.indent-rainbow"
     ```
   
-   이를 통해 indent-rainbow의 고유 식별자를 추가했습니다. Codespaces를 시작할 때 이 확장 프로그램을 사전 설치해야 합니다.
+   이를 통해 [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)의 고유 식별자를 추가했습니다. Codespaces를 시작할 때 이 확장 프로그램을 사전 설치해야 합니다.
 
 확장 프로그램의 고유 식별자를 찾으세요:
 
 * 이 링크를 통해 확장 프로그램의 웹 페이지로 이동합니다. [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
-* 오른쪽의 **More info** 섹션 아래에서 고유 식별자 필드를 찾습니다.
+* 오른쪽의 **More info** 섹션 아래에서 고유 식별자 필드를 배치합니다.
 
-> 💡 이곳에서 더 배워 보세요 <https://docs.github.com/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account>
+> 💡 여기서 더 배워 보세요 <https://docs.github.com/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account>
 
 
 
-### 2. 부드럽게 섹션으로 이동하기
+### 2. 섹션 이동에 부드러운 스크롤 효과 적용하
 
-포트폴리오 사이트 헤더에는 아래 섹션으로 이동하는 링크가 있습니다. 이 링크를 클릭하면 페이지를 해당 섹션으로 스크롤하여 이동합니다. 하지만, 스크롤 되는 것처럼 보이지 않죠?
+포트폴리오 사이트 헤더에는 아래 섹션으로 이동하는 링크가 있습니다. 이 링크를 클릭하면 해당 섹션으로 페이지가 스크롤해서 이동합니다. 하지만, 부드럽게 이동하는 것 같진 않죠?
 
-사용자가 페이지가 어떻게 이동하고 페이지에서 어떤 일이 일어나고 있는지 느낄 수 있도록 속도를 줄여 봅시다. 이는 사용자가 사이트를 더 쉽게 이해하고 이용하도록 만들어줍니다.
+사용자가 페이지가 어떻게 이동하고 페이지에서 어떤 일이 일어나고 있는지 느낄 수 있도록 속도를 줄여 봅시다. 이는 사용자가 사이트를 더 쉽게 이해하고 이용하도록 만들어 줍니다.
 
-1. `/src/BlazorApp/wwwroot/css/app.css`를 엽니다. 이 파일은 포트폴리오 애플리케이션을 위한 스타일 시트입니다. html에 대한 스타일을 추가해 봅시다. 코드를 보시면 현재 html과 body 스타일이 함께 설정되어 있는 것을 알 수 있습니다. 따라서 html 요소의 스크롤하는 방식을 설정하기 위해 아래의 CSS 스니펫을 추가하세요:
+1. `/src/BlazorApp/wwwroot/css/app.css`를 엽니다. 이 파일은 포트폴리오 애플리케이션을 위한 스타일 시트입니다. `html` 태그에 대한 스타일을 추가합시다. 코드를 보면 현재 `html`과 `body` 스타일이 함께 설정되어 있는 것이 보입니다. 따라서 `html`요소의 스크롤하는 방식을 설정하기 위해 아래의 CSS 스니펫을 추가하세요:
 
     ```css
     html {
@@ -306,7 +306,7 @@ GitHub 리포지토리에서 :
     }
     ```
 
-포트폴리오 사이트는 Codespaces에서 실행 중이어야 하며, 변경 사항은 페이지에 자동으로 다시 로드됩니다. 상단 헤더의 링크를 클릭해서 부드러운 스크롤 효과를 확인해 ㅗ세요.
+포트폴리오 사이트가 Codespaces에서 실행 중이기 때문에 자동으로 변경 사항을 불러옵니다. 상단 헤더의 링크를 클릭해서 부드러운 스크롤 효과를 확인하세요.
 
 
 
