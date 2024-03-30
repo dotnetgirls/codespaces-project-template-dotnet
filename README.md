@@ -67,9 +67,9 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 ### 개인 포트폴리오 생성하기
 
 
-1. 이 양식에서 리포지토리를 만듭니다. 이 [리포지토리 링크 생성](https://github.com/education/codespaces-teaching-template-dotnet/generate)을 사용합니다. 리포지토리 소유자를 선택하고, 원하는 경우 이름과 설명을 작성하고, 새 리포지토리를 공개 또는 비공개 중 무엇으로 지정할 것인지 선택합니다.
-1. 새로 생성된 리포지토리의 메인 페이지로 이동합니다.
-1. 리포지토리 이름 아래에서 코드 드롭다운 메뉴를 사용하고 Codespaces 탭에서 "Create codespace on main"을 선택합니다.
+1. 이 템플릿에서 리포지토리를 만듭니다. 이 [리포지토리 생성하기](https://github.com/education/codespaces-teaching-template-dotnet/generate)를 사용합니다. 리포지토리 소유자를 선택하고, 원하는 경우 이름과 설명을 작성합니다. 새 리포지토리를 공개 또는 비공개로 지정합니다.
+1. 새로 생성한 리포지토리의 메인 페이지로 이동합니다.
+1. 리포지토리 이름 아래에 있는 코드 드롭다운 메뉴를 클릭하고 Codespaces 탭에서 "Create codespace on main"을 클릭합니다.
 
     <img src="./images/new-codespace-button.png" alt="Create codespace" style="width:270px;"/>
 
@@ -77,7 +77,7 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
     <img src="./images/codespaces-initializing.png" alt="Codespaces initializing" style="width: 600px;"/>
 
-1. 완료되면 하단에 터미널 섹션과 함께 Codespaces 로드가 나타납니다. 여기서 `dotnet Restore && dotnet build`가 실행되는 것을 확인 가능합니다. 완료되면 `swa start`를 실행하여 웹 애플리케이션을 실행할 수 있는 터미널 프롬프트로 돌아갑니다.
+1. 초기화가 끝나면 하단에 터미널 섹션과 함께 Codespaces가 나타납니다. 여기서 `dotnet restore && dotnet build` 명령어가 실행 중인 것이 보입니다. 실행이 끝나면 `swa start` 명령어를 통해 웹 애플리케이션을 실행할 수 있는 터미널 프롬프트로 돌아갑니다.
 
    웹 애플리케이션이 시작되면 **포트 4280에서 성공적으로 앱이 시작됐다**는 메시지가 나타나고 브라우저 내에서 해당 사이트를 열 수 있습니다. 
 
@@ -85,17 +85,17 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 <br />
 
-## ✨ 사이트를 네 단계에 걸쳐 수정하기
+## ✨ 네 단계를 따라 사이트 수정하기
 
 이 프로젝트는 사용자가 원하는대로 쉽게 수정할 수 있습니다. 사이트의 각 섹션은 별도의 컴포넌트이며, 사용자의 정보는 한 곳에만 저장해야 합니다. 이렇게 함으로써 업데이트를 쉽게 할 수 있고, 어떤 방식으로 Blazor 컴포넌트에 값을 전달하는지 확인할 수 있습니다.
   
 각 단계별로 Codespaces에서 프로젝트를 연 다음 내용을 변경하고, 변경 사항을 커밋할 수 있습니다.
 
-> 자세한 Codespaces 원본 제어 방법은 [Codespaces에서 원본 제어 사용](https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)을 참조하세요.
+> 자세한 Codespaces 원본 제어 방법은 [Codespaces에서 원본 제어 사용하기](https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)를 참조하세요.
 
 ### 1️⃣ 세부 정보 및 소셜 미디어 계정 추가하기
 
-`/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 을 엽니다. 이 파일은 이름, 제목, 이메일 및 소셜 미디어 계정을 사용자가 원하는대로 수정하는 데 필요한 키와 그 키에 해당하는 값을 담고 있는 JSON 객체입니다.
+ `/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 파일을 열고, JSON 개체에서 필요한 키와 그 키에 해당하는 값을 수정합니다. 이름, 제목, 이메일 및 소셜 미디어 계정을 사용자가 원하는대로 수정하세요.  
 
 ```jsonc
 {
@@ -112,17 +112,17 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 };
 ```
 
-사이트 상단에 표시되는 이름과 제목을 원하는 대로 업데이트하세요.
+사이트 상단에 표시되는 이름과 제목을 원하는 대로 수정하세요.
 
-이메일 주소와 소셜 계정 입력은 _선택 사항_ 입니다. 이들은 `Footer` 컴포넌트에 사용됩니다. 목록에 포함하지 않거나 빈 문자열("")로 설정하면 해당 아이콘과 링크가 표시되지 않습니다.
+이메일 주소와 소셜 계정 입력은 _선택 사항_ 이고, `Footer` 컴포넌트에 쓰입니다. 이들을 작성하지 않거나 빈 문자열("")로 설정하면 해당 아이콘과 링크가 표시되지 않습니다.
 
 ### 2️⃣ 이미지 업데이트하기
 
-이 포트폴리오 사이트에는 세 가지 이미지가 있습니다 : 상단 배경, "About me" 배경, 포트폴리오 섹션(책상 그림). 이 기본 세가지 이미지들 대신 사용 허락이 없어도 자유롭게 사용할 수 있는 이미지나, 자신이 소유하고 있는 이미지 중 **가로 형태**의 이미지를 넣으면 됩니다.
+이 포트폴리오 사이트에는 세 가지 이미지가 있습니다 : 상단 배경, "About me" 배경, 포트폴리오 섹션(책상 그림). 이 기본 세가지 이미지들 대신 사용 허가 없이 자유롭게 사용할 수 있는 이미지나, 자신이 소유하고 있는 이미지 중 **가로 형태**의 이미지를 넣으면 됩니다.
 
 [Pixabay](https://pixabay.com/) 또는 [Unsplash](https://unsplash.com) 같은 사이트에서 사진을 찾을 수 있습니다. 사진, 일러스트, 벡터 이미지 등 원하는 이미지를 찾으면 각각을 `/src/BlazorApp/wwwroot/images` 에 간결하고 의미있는 파일명으로 저장합니다.
 
-`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 좀 전에 찾은 이미지들로 업데이트하고 각 이미지의 alt 텍스트를 업데이트하세요 :
+`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 방금 찾은 이미지들로 바꾸고 각 이미지의 alt 텍스트를 수정하세요 :
 
 ```jsonc
 [
@@ -152,7 +152,7 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 ### 3️⃣ "about me" 추가하기
 
-"about me" 섹션은 사람들에게 여러분의 기술과 관심사에 대한 정보를 제공하는데 도움이 됩니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 세 가지 속성을 업데이트하세요 : 
+"about me" 섹션은 사람들에게 여러분의 기술과 관심사에 대한 정보를 제공하기 좋습니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 세 가지 속성을 수정하세요 : 
 
 * `description`: 나 자신, 직업 목표 및 관심사에 대한 짧은 문장 또는 두 문장.
 * `skillsList`: 사이트에 나열할 기술 [목록](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)은 원하는 만큼 작성.
@@ -162,9 +162,9 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 이 섹션은 여러분이 작업한 프로젝트를 강조하는 포트폴리오입니다. 기사, 비디오, 로고 디자인, GitHub 프로젝트 등 여러분을 부각하는 내용으로 구성할 수 있습니다!
 
-JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 열고, 강조하려는 각 항목에는 다음이 필요합니다 : 제목, 설명, URL
+JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 열고, 강조하려는 각 항목에는 **제목, 설명, URL** 이 필요합니다.
 
-샘플 디자인에는 네 개의 항목이 있지만, 항목 수는 각자 자유롭게 선택하면 됩니다.
+예시 내용에는 네 개의 항목이 있지만, 항목 수는 각자 자유롭게 선택하면 됩니다.
 
 ```jsonc
 [
