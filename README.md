@@ -250,16 +250,16 @@ GitHub 리포지토리에서 :
 
 ## 🏆 도전과제
 
-아래는 포트폴리오 사이트를 커스텀하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 네 가지 방법입니다.
+아래는 포트폴리오 사이트를 수정정하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 네 가지 방법입니다.
 
   1. [Codespaces 작업 환경 설정하기](#1-customize-your-codespaces)
-  1. [부드럽게 섹션으로 이동하기](#2-update-to-smooth-scroll-to-a-section)
+  1. [섹션 이동에 부드러운 스크롤 효과 적용하기](#2-update-to-smooth-scroll-to-a-section)
   1. [책상 사진에 애니메이션 추가하기](#3-animate-desk-photo)
   1. [새로운 섹션 추가하기](#4-add-a-new-section)
 
 ### 1. Codespaces 작업 환경 설정하기
 
-`.devcontainer/devcontainer.json`에는 Codespaces 환경 구성에 필요한 확장 프로그램 정보가 담겨 있습니다. Codespaces를 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 아래를 따라 진행하세요:
+`.devcontainer/devcontainer.json`에는 Codespaces 환경 구성에 필요한 확장 프로그램 정보가 담겨 있습니다. Codespaces를 시작할 때 어떤 확장 프로그램을 사용할지 변경 가능합니다. 아래 과정에 따라 진행하세요 :
 
 1. 파일 _.devcontainer/devcontainer.json_ 을 열고 JSON 요소 **extensions**을 찾습니다.
 
@@ -284,14 +284,15 @@ GitHub 리포지토리에서 :
 
 확장 프로그램의 고유 식별자를 찾으세요:
 
-* 이 링크를 통해 확장 프로그램의 웹 페이지로 이동합니다. [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
-* 오른쪽의 **More info** 섹션 아래에서 고유 식별자 필드를 배치합니다.
+* 이 링크를 통해 확장 프로그램의 웹 페이지로 이동합니다.  [https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow&WT.mc_id=dotnet-82024-juyoo)
+* 오른쪽의 **More info** 섹션 아래에 고유 식별자 필드를 배치합니다.
 
-> 💡 여기서 더 배워 보세요 <https://docs.github.com/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account>
+> 💡 여기서 더 배워 보세요
+> <https://docs.github.com/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account>
 
 
 
-### 2. 섹션 이동에 부드러운 스크롤 효과 적용하
+### 2. 섹션 이동에 부드러운 스크롤 효과 적용하기
 
 포트폴리오 사이트 헤더에는 아래 섹션으로 이동하는 링크가 있습니다. 이 링크를 클릭하면 해당 섹션으로 페이지가 스크롤해서 이동합니다. 하지만, 부드럽게 이동하는 것 같진 않죠?
 
