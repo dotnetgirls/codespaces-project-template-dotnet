@@ -361,7 +361,7 @@ GitHub 리포지토리에서 :
     </section>
     ```
 
-1. `Index.razor` 파일을 열고 페이지 내에서 렌더링되길 원하는 위치에 Education 컴포넌트를 추가하세요 :
+1. `Index.razor` 파일을 열고 페이지 내에서 렌더링 되길 원하는 위치에 Education 컴포넌트를 추가하세요 :
 
     ```razor
     <Education />
@@ -382,12 +382,12 @@ GitHub 리포지토리에서 :
 
 > #### Codespaces 브라우저 앱
 >
-> Edge 또는 Chrome을 사용하는 경우, Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 나타납니다. Codespaces 앱을 사용하면, 브라우저 외부에서 작업할 수 있습니다. 앱 아이콘을 찾아보고 팝업 창으로 Codespaces 앱을 설치해보세요.
+> Edge 또는 Chrome을 사용하는 경우, Codespaces를 시작할 때 Codespaces 앱을 설치할 수 있는 옵션이 나타납니다. Codespaces 앱을 사용하면, 브라우저 외부에서 작업할 수 있습니다. 앱 아이콘을 찾아보고 팝업 창으로 Codespaces 앱을 설치해 보세요.
 >
 > <img src="./images/codespaces-app.png" alt="Codespaces browser app" style="width: 400px;"/>
 
 <br />
 
-## 🔎 문제를 발견헸거나 개선하기 원하는 내용이 있나요?
+## 🔎 문제를 발견했거나 개선하기 원하는 내용이 있나요?
 
 [GitHub Issue 열기](/../../issues/new)로 이 템플릿 리포지토리가 더 좋아지도록 도와주세요!
