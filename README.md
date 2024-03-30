@@ -199,7 +199,7 @@ JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 열고, �
 
 ### Azure 정적 웹앱
 
-[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 마이크로소프트의 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 호스팅 솔루션입니다. 이 서비스는 Azure Functions, 인증, 스테이징 버전 등 Azure를 통해 사이트를 확장할 수 있습니다.
+[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 Microsoft의 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 호스팅 솔루션입니다. 이 서비스는 Azure Functions, 인증, 스테이징 버전 등 Azure를 통해 사이트를 확장할 수 있습니다.
 
 웹 애플리케이션을 배포하려면 Azure 계정과 GitHub 계정이 모두 필요합니다. Azure 계정이 아직 없다면, 배포 과정 중에 생성하거나 아래 링크에서 생성하세요 :
 
@@ -213,14 +213,14 @@ Codespaces에서 프로젝트를 열고 :
 
    <img src="./images/deploy-to-azure.png" alt="Create Static Web App" style="width: 300px;" />
 
-1. GitHub에 로그인하지 않은 경우 로그인하라는 메시지가 나타납니다. 보류 중인 파일 변경 사항이 있는 경우 이를 커밋하라는 메시지가 표시됩니다.
-1. 애플리케이션 정보를 설정할 때 :
+1. GitHub에 로그인하지 않은 경우 로그인하라는 안내가 나타납니다. 아직 변경 사항을 커밋하지 않았을 경우, 커밋 요청 메시지가 보입니다.
+1. 애플리케이션 정보를 입력할 때 :
     1. **Name for Static Web App**: 정적 웹앱의 이름을 입력합니다. 기본값은 GitHub 리포지토리 이름입니다.
     1. **Region**: 여러분의 지역에서 가장 가까운 곳을 고릅니다.
     1. **Project structure**: "Blazor"를 선택합니다.
     1. **Location of application code**: `/src/BlazorApp` 을 입력합니다.
     1. **Output location**: `wwwroot` 를 입력합니다.
-1. 완료되면 화면 하단에 알림이 나타나고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업을 볼 수 있으며, 현재 실행 중인 것을 확인할 수 있습니다.
+1. 입력이 끝나면 화면 하단에 알림이 나타나고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업을 볼 수 있으며, 현재 실행 중인 것을 확인할 수 있습니다.
 
 > 🤩 **보너스**: [Azure 정적 웹앱에 사용자가 원하는 도메인 설정하기](https://learn.microsoft.com/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=dotnet-82024-juyoo)
 
