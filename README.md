@@ -311,8 +311,8 @@ GitHub 리포지토리에서 :
 
 
 ### 3. 책상 사진에 애니메이션 추가하기
-
-애니메이션은 페이지 요소에 동작을 추가합니다. 이렇게 함으로써, 사용자 상호작용을 높이고 주목 받기 원하는 항목을 강조할 수 있습니다. 포트폴리오 섹션의 책상 사진에 애니메이션을 추가해 보겠습니다.
+  
+애니메이션으로 페이지 요소를 움직여서 사용자 상호작용을 높이고 특정 항목을 강조할 수 있습니다. 포트폴리오 섹션의 책상 사진에 애니메이션을 추가하세요.
 
 1. 포트폴리오 사이트의 스타일시트인 `/src/BlazorApp/wwwroot/css/app.css`를 Codespaces 내에서 엽니다. 그리고 `@keyframes` 정의를 추가해서 왼쪽에서 슬라이드하는 애니메이션 시퀀스를 추가하세요 :
 
@@ -327,7 +327,7 @@ GitHub 리포지토리에서 :
     }
     ```
 
-1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진이 시퀀스대로 동작하도록 지시 가능합니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾습니다. 이 태그가 인라인 CSS를 사용하여 스타일을 설정합니다. 스타일 정의 내에 다음을 추가하세요:
+1. 이제 `slideInLeft` 애니메이션 시퀀스를 정의했으므로, 책상 사진이 시퀀스대로 동작하도록 합니다. `/src/BlazorApp/Components/Portfolio.razor`를 열고 `img` 태그를 찾습니다. 이 태그를 꾸미기 위해 인라인 CSS를 사용합니다. 스타일 정의 내에 다음을 추가하세요:
 
     ```css
     animation: 1s ease-out 0s 1 slideInLeft;
@@ -339,15 +339,15 @@ GitHub 리포지토리에서 :
     <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover; animation: 1s ease-out 0s 1 slideInLeft;" alt="@(hero.Alt)" />
     ```
 
-포트폴리오 사이트는 Codespaces에서 실행 중이어야 하며, 변경 사항은 페이지에 자동으로 다시 로드됩니다. 페이지를 위아래로 스크롤하여 책상 사진이 페이지로 미끄러지듯 들어오는 것을 확인하세요.
+포트폴리오 사이트가 Codespaces에서 실행 중이기 때문에 자동으로 변경 사항을 불러옵니다. 페이지를 위아래로 스크롤하여 책상 사진이 미끄러지듯 움직이는 것을 확인하세요.  
 
-> 🤩 **추가 사항**: 스크롤을 내리는 화살표에 동작을 추가하세요.
+> 🤩 **추가 사항**: 스크롤 다운 화살표에 동작 추가하기
 
 
 
 ### 4. 새로운 섹션 추가하기
 
-기본 섹션으로 포트폴리오 사이트를 이미 만들었지만, 여러분의 사이트에 원하는 섹션을 추가해서 자유롭게 커스텀 가능합니다.
+앞선 과정을 통해 기본으로 주어진 섹션으로 포트폴리오 사이트를 만들었습니다. 더 담고 싶은 내용이 있다면 포트폴리오 사이트에 섹션을 추가하세요.
 
 예를 들어서 포트폴리오 사이트에 교육 섹션을 추가해 보겠습니다.
 
@@ -367,16 +367,16 @@ GitHub 리포지토리에서 :
     <Education />
     ```
 
-여러분의 Codespaces에서 포트폴리오 애플리케이션이 실행 중이라면, 변경사항이 적용되어 사이트가 다시 로드될 것입니다.
+포트폴리오 사이트가 Codespaces에서 실행 중이기 때문에 자동으로 변경 사항을 불러옵니다.  
 
 <br />
 
 
-## 📚 Resources
+## 📚 참고 자료
 
 * [GitHub Codespaces 문서 개요](https://docs.github.com/codespaces/overview)
 * [GitHub Codespaces 가이드](https://docs.github.com/codespaces/guides)
-* [VS Code와 Docker를 사용하여 로컬에서 dev containers 사용하기](https://github.com/microsoft/vscode-remote-try-dotnet#vs-code-dev-containers)
+* [VS Code와 Docker를 이용하여 로컬에서 dev containers 사용하기](https://github.com/microsoft/vscode-remote-try-dotnet#vs-code-dev-containers)
 * [Blazor 시작하기](https://learn.microsoft.com/training/paths/build-web-apps-with-blazor/?WT.mc_id=dotnet-82024-juyoo)
 * [초보자를 위한 웹 개발](https://github.com/microsoft/Web-Dev-For-Beginners)
 
@@ -388,6 +388,6 @@ GitHub 리포지토리에서 :
 
 <br />
 
-## 🔎 문제를 발견하셨거나 개선을 원하는 사항이 있나요?
+## 🔎 문제를 발견헸거나 개선하기 원하는 내용이 있나요?
 
-[GitHub Issue 열기](/../../issues/new)로 이 양식 리포지토리가 더 나아지도록 도와주세요!
+[GitHub Issue 열기](/../../issues/new)로 이 템플릿 리포지토리가 더 좋아지도록 도와주세요!
