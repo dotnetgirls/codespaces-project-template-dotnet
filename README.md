@@ -44,7 +44,7 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 - `/.devcontainer`
   - `.devcontainer/Dockerfile`: Codespaces가 사용하는 컨테이너 구성 파일로, 운영 체제 및 기타 세부 정보를 담고 있음
-  - `.devcontainer/devcontainer.json`: Codespaces가 사용하는 Visual Studio Code 환경 설정을 위한 파일로, 추가 익스텐션 정보 등을 담고 있음
+  - `.devcontainer/devcontainer.json`: Codespaces가 사용하는 Visual Studio Code 환경 설정을 위한 파일로, 추가 익스텐션 정보라든가 하는 것들을 담고 있음
   - `.devcontainer/on-create.sh`: Codespaces가 사용하는 추가적인 스크립트 파일로, 파워셸과 같은 추가적인 도구 설치 정보를 담고 있음
 - `/src`: 포트폴리오 사이트를 구축하기 위한 Blazor WebAssembly 프로젝트
 - `.editorconfig`: Codespaces에서 일관성 있는 코딩 스타일을 유지하는 데 유용한 [EditorConfig](https://editorconfig.org/) 설정 파일
@@ -56,11 +56,11 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 ## 🚀 시작하기
 
-이 포트폴리오 사이트 프로젝트는 샘플 데이터가 이미 있어, 바로 Codespaces를 열어 웹 앱이 실행이 되는지 확인 하고, 언제든지 배포 가능합니다.
+이 포트폴리오 사이트 프로젝트는 샘플 데이터가 이미 있어, 바로 Codespaces를 열어 웹 앱이 실행이 되는지 확인 가능하고, 언제든지 배포 가능합니다.
 
-시작할 때 필요한 개발 환경이 모두 마련되어 있습니다. [.NET Codespaces 템플](https://github.com/education/codespaces-teaching-template-dotnet)을 기반으로 이미 설정된 사용할 수 있는 항목:
+시작할 때 필요한 개발 환경이 모두 마련되어 있습니다. [닷넷 Codespaces 양식](https://github.com/education/codespaces-teaching-template-dotnet)을 기반으로 이미 설정된 사용할 수 있는 항목:
 
-- 포트폴리오 사이트의 각 섹션에 대한 구성 요소가 포함된 간단한 [Blazor WebAssembly](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?WT.mc_id=dotnet-82024-juyoo) 애플리케이션
+- 포트폴리오 사이트의 각 섹션에 대한 구성 요소가 포함된 간단한 [블레이저 WebAssembly](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?WT.mc_id=dotnet-82024-juyoo) 애플리케이션
 - 배포 시 사이트를 구축하기 위한 [SWA CLI](https://azure.github.io/static-web-apps-cli/)
 - 코드 일관성을 위해 [EditorConfig](https://editorconfig.org/)를 사용한 코드 린팅 및 형식 지정.
 
@@ -85,17 +85,17 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 <br />
 
-## ✨ 네 단계에 걸쳐 사이트 수정하기
+## ✨ 네 단계를 따라 사이트 수정하기
 
-이 프로젝트는 원하는대로 쉽게 수정할 수 있습니다. 사이트의 각 섹션은 별도의 컴포넌트이며, 사용자의 정보는 한 곳에만 저장해야 합니다. 이렇게 함으로써 업데이트를 쉽게 할 수 있고 어떤 방식으로 Blazor 컴포넌트에 값을 전달하는지 확인할 수 있습니다.
+이 프로젝트는 사용자가 원하는대로 쉽게 수정할 수 있습니다. 사이트의 각 섹션은 별도의 컴포넌트이며, 사용자의 정보는 한 곳에만 저장해야 합니다. 이렇게 함으로써 업데이트를 쉽게 할 수 있고, 어떤 방식으로 Blazor 컴포넌트에 값을 전달하는지 확인할 수 있습니다.
   
-각 단계별로 Codespaces에서 프로젝트를 연 다음 내용을 변경하고 변경 사항을 커밋할 수 있습니다.
+각 단계별로 Codespaces에서 프로젝트를 연 다음 내용을 변경하고, 변경 사항을 커밋할 수 있습니다.
 
 > 자세한 Codespaces 원본 제어 방법은 [Codespaces에서 원본 제어 사용하기](https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)를 참조하세요.
 
 ### 1️⃣ 세부 정보 및 소셜 미디어 계정 추가하기
 
- `/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 파일을 열고 JSON 개체에서 필요한 키와 그 키에 해당하는 값을 수정합니다. 이름, 제목, 이메일 및 소셜 미디어 계정을 사용자가 원하는대로 수정하세요.  
+ `/src/BlazorApp/wwwroot/sample-data/siteproperties.json` 파일을 열고, JSON 개체에서 필요한 키와 그 키에 해당하는 값을 수정합니다. 이름, 제목, 이메일 및 소셜 미디어 계정을 사용자가 원하는대로 수정하세요.  
 
 ```jsonc
 {
@@ -116,13 +116,13 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 이메일 주소와 소셜 계정 입력은 _선택 사항_ 이고, `Footer` 컴포넌트에 쓰입니다. 이들을 작성하지 않거나 빈 문자열("")로 설정하면 해당 아이콘과 링크가 표시되지 않습니다.
 
-### 2️⃣ 이미지 변하기
+### 2️⃣ 이미지 업데이트하기
 
-이 포트폴리오 사이트에는 세 가지 이미지가 있습니다 : 상단 배경, "About me" 배경, 포트폴리오 섹션(책상 사진). 이 기본 세 가지 이미지들 대신 사용 허가 없이 자유롭게 사용할 수 있는 이미지나 자신이 소유하고 있는 이미지 중 **가로 형태**의 이미지를 넣으면 됩니다.
+이 포트폴리오 사이트에는 세 가지 이미지가 있습니다 : 상단 배경, "About me" 배경, 포트폴리오 섹션(책상 그림). 이 기본 세가지 이미지들 대신 사용 허가 없이 자유롭게 사용할 수 있는 이미지나, 자신이 소유하고 있는 이미지 중 **가로 형태**의 이미지를 넣으면 됩니다.
 
 [Pixabay](https://pixabay.com/) 또는 [Unsplash](https://unsplash.com) 같은 사이트에서 사진을 찾을 수 있습니다. 사진, 일러스트, 벡터 이미지 등 원하는 이미지를 찾으면 각각을 `/src/BlazorApp/wwwroot/images` 에 간결하고 의미있는 파일명으로 저장합니다.
 
-`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열어 각 이미지의 alt 텍스트를 수정하세요 :
+`/src/BlazorApp/wwwroot/sample-data/heroimages.json` 을 열고 방금 찾은 이미지들로 바꾸고 각 이미지의 alt 텍스트를 수정하세요 :
 
 ```jsonc
 [
@@ -154,7 +154,104 @@ _단 몇 분만에 개인 포트폴리오 웹사이트를 만들고 수정해서
 
 "about me" 섹션은 사람들에게 여러분의 기술과 관심사에 대한 정보를 제공하기 좋습니다. `/src/BlazorApp/wwwroot/sample-data/aboutme.json` 을 열고 다음 세 가지 속성을 수정하세요 : 
 
-* `description`: 나 자신, 직업 목표 및 관심사에 대한 짧은 문장 또는 두경하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 네 가지 방법입니다.
+* `description`: 나 자신, 직업 목표 및 관심사에 대한 짧은 문장 또는 두 문장.
+* `skillsList`: 사이트에 나열할 기술 [목록](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)은 원하는 만큼 작성.
+* `detailOrQuote`: 나 자신에 대해 더 많은 세부 정보를 추가하거나 좋아하는 명언을 넣을 수 있는 긴 블록.
+
+### 4️⃣ 작업한 프로젝트를 추가하고 세부 텍스트 입력하기
+
+이 섹션은 여러분이 작업한 프로젝트를 강조하는 포트폴리오입니다. 기사, 비디오, 로고 디자인, GitHub 프로젝트 등 여러분을 부각하는 내용으로 구성할 수 있습니다!
+
+JSON 배열인 `/src/BlazorApp/wwwroot/sample-data/projects.json` 을 열고, 강조하려는 각 항목에는 **제목, 설명, URL** 이 필요합니다.
+
+예시 내용에는 네 개의 항목이 있지만, 항목 수는 각자 자유롭게 선택하면 됩니다.
+
+```jsonc
+[
+  {
+    "title": "10 Things To Know About Azure Static Web Apps 🎉",
+    "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
+    "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+  },
+  {
+    "title": "Web Development for Beginners",
+    "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
+    "url": "https://github.com/microsoft/web-dev-for-beginners"
+  },
+  {
+    "title": "My Resume Site",
+    "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+    "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+  },
+  {
+    "title": "GitHub Codespaces and github.dev",
+    "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
+    "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+  }
+]
+```
+
+<br/>
+
+## 🏃 웹 애플리케이션 배포하기
+
+이 프로젝트는 **무료**로 [Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo) 및 [GitHub 페이지](https://pages.github.com/)</a>에 배포할 수 있습니다.
+
+### Azure 정적 웹앱
+
+[Azure 정적 웹앱](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=dotnet-82024-juyoo)은 Microsoft의 정적 사이트(또는 서버가 아닌, 사용자의 브라우저에서 렌더링되는 사이트)를 위한 호스팅 솔루션입니다. 이 서비스는 Azure Functions, 인증, 스테이징 버전 등 Azure를 통해 사이트를 확장할 수 있습니다.
+
+웹 애플리케이션을 배포하려면 Azure 계정과 GitHub 계정이 모두 필요합니다. Azure 계정이 아직 없다면, 배포 과정 중에 생성하거나 아래 링크에서 생성하세요 :
+
+* [학생용 Azure 계정을 만들기(신용 카드가 필요 없습니다)](https://azure.microsoft.com/free/students/?WT.mc_id=dotnet-82024-juyoo)
+* [새로운 Azure 계정을 만들기](https://azure.microsoft.com/free/?WT.mc_id=dotnet-82024-juyoo)
+
+Codespaces에서 프로젝트를 열고 :
+
+1. 왼쪽 사이드바의 Azure 아이콘을 클릭합니다. 아직 로그인하지 않았다면 로그인하고, Azure를 처음 사용하는 경우 안내에 따라 계정을 만듭니다.
+1. Azure 메뉴에서 "➕" 기호를 누른 다음 "Create Static Web App"을 선택합니다.
+
+   <img src="./images/deploy-to-azure.png" alt="Create Static Web App" style="width: 300px;" />
+
+1. GitHub에 로그인하지 않은 경우 로그인하라는 안내가 나타납니다. 아직 변경 사항을 커밋하지 않았을 경우, 커밋 요청 메시지가 보입니다.
+1. 애플리케이션 정보를 입력할 때 :
+    1. **Name for Static Web App**: 정적 웹앱의 이름을 입력합니다. 기본값은 GitHub 리포지토리 이름입니다.
+    1. **Region**: 여러분의 지역에서 가장 가까운 곳을 고릅니다.
+    1. **Project structure**: "Blazor"를 선택합니다.
+    1. **Location of application code**: `/src/BlazorApp` 을 입력합니다.
+    1. **Output location**: `wwwroot` 를 입력합니다.
+1. 입력이 끝나면 화면 하단에 알림이 나타나고, 새로운 GitHub Action 워크플로가 프로젝트에 추가됩니다. "Open Action in GitHub"을 클릭하면 생성된 작업이 보이고, 현재 실행 중인 것을 확인할 수 있습니다.
+
+> 🤩 **보너스**: [Azure 정적 웹앱에 사용자가 원하는 도메인으로 설정하기](https://learn.microsoft.com/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=dotnet-82024-juyoo)
+
+### GitHub Pages
+
+[GitHub Pages](https://pages.github.com/)를 사용하면 GitHub 리포지토리에서 웹사이트를 직접 호스팅할 수 있습니다. 이 프로젝트는 간단하게 포트폴리오를 GitHub Pages에 배포할 수 있습니다.  
+  
+GitHub 리포지토리에서 :  
+
+1. "Settings" 탭으로 이동하고 "Pages" 메뉴로 이동합니다.
+1. _Build and deployment_ 부분에서, source를 **GitHub Actions**으로 선택합니다.
+
+    <img src="./images/deploy-to-ghpages-01.png" alt="Choose GitHub Actions for deployment to GitHub Pages" style="width: 600px;" />
+
+1. GitHub Pages visibility를 **Public**으로 설정합니다.
+1. 코드를 푸시하거나 수동으로 호출하여 GitHub Action 워크플로를 실행합니다.
+
+    <img src="./images/deploy-to-ghpages-02.png" alt="Invoke GitHub Actions" style="width: 600px;" />
+
+1. GitHub Pages에 접속합니다.
+
+    <img src="./images/deploy-to-ghpages-03.png" alt="Visit GitHub Pages" style="width: 600px;" />
+
+> 🤩 **보너스**: [GitHub Pages 사이트에 사용자가 원하는 도메인으로 설정하기](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+
+<br />
+
+
+## 🏆 도전과제
+
+아래는 포트폴리오 사이트를 커스텀하고 Codespaces, CSS, HTML 및 JavaScript를 익힐 수 있는 추가적인 네 가지 방법입니다.
 
   1. [Codespaces 작업 환경 설정하기](#1-customize-your-codespaces)
   1. [부드럽게 섹션으로 이동하기](#2-update-to-smooth-scroll-to-a-section)
